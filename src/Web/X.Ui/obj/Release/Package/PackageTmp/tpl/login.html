@@ -1,0 +1,68 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <script src="/js/jq_2.1.4.js"></script>
+    <script src="/js/x.js"></script>
+    <link href="/css/x.dialog.css" rel="stylesheet" />
+    <title>登录 - 我的导航</title>
+    <link rel="stylesheet" type="text/css" href="/css/web/login.css" />
+</head>
+<body>
+    <div id="box"></div>
+    <div class="cent-box">
+        <div class="cent-box-header">
+            <h1 class="main-title hide">导航</h1>
+        </div>
+        <div class="cont-main clearfix">
+            <div class="index-tab">
+                <div class="index-slide-nav">
+                    <a href="/login.html" class="active">登录</a>
+                    <a href="/reg.html">注册</a>
+                    <div class="slide-bar"></div>
+                </div>
+            </div>
+            <form id="loginform" name="loginform" url="/tools/submit_ajax.ashx?action=user_login&site=main">
+                <div class="login form">
+                    <div class="group">
+                        <div class="group-ipt email">
+                            <input id="txtUserName" name="uid" type="text" class="ipt" placeholder="输入您的用户名" />
+                        </div>
+                        <div class="group-ipt password">
+                            <input name="pwd" id="txtPassword" type="password" class="ipt" placeholder="输入您的登录密码" />
+                        </div>
+                    </div>
+                </div>
+                <div class="button">
+                    <button type="button" class="login-btn register-btn" id="button" onclick="do_login();">登录</button>
+                </div>
+                <input id="turl" name="turl" type="hidden" value="/user/center/index.html" /><!--记住上一页网址-->
+            </form>
+            <script type="text/javascript">
+                function do_login() {
+                    var ps = $("#loginform").serialize().split("&");
+                    var d = {};
+                    for (var i in ps) {
+                        var p = ps[i].split("=");
+                        d[p[0]] = p[1];
+                    }
+                    if (!d.uid) { x.alert("用户名不能为空"); return; }
+                    if (!d.pwd) { x.alert("密码不能为空"); return; }
+
+                    x.doapi("login", d, function (d) {
+                        if (!d.issucc) return;
+                        x.alert("登陆成功，欢迎使用", function () {
+                            document.location.href = "/";
+                        });
+                    });
+                }
+            </script>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2017 abcok.me</p>
+        <p>abcok.me我的网址导航</p>
+    </div>
+</body>
+</html>

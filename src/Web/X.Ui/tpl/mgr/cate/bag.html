@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    #parse("com/_head.html")
+    <title>编辑分类 - $cfg.name</title>
+    <style type="text/css">
+        body { margin: 0; }
+        #id_name { width: 450px; height: 240px; }
+    </style>
+</head>
+<body>
+    <x:form api="mgr.cate.bagsave">
+        <input type="hidden" name="id" value="$!item.id" x-check="" />
+        <input type="hidden" name="lg" value="$!lg" x-check="" />
+        <x:pick title="上级" src="dict:link.cate.$!{lg}:2-%25E9%25A1%25B6%25E7%25BA%25A7-$!item.value" name="upv" count="1" def="$!up" />
+        <x:text title="名称" tip="多个名称用空格隔开" name="name" size="4" tp="3" def="$!item.name" />
+        <div class="btns">
+            <button type="submit" class="btn btn-primary"><i class="icon-ok"></i>提交保存</button>
+        </div>
+    </x:form>
+    <br />
+    <br />
+    <script type="text/javascript">
+        $("form:eq(0)").xform({
+            callback: function (d) {
+                if (!d.issucc) return;
+                x.closewin();
+            }
+        });
+    </script>
+</body>
+</html>

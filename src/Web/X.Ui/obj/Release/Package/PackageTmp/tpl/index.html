@@ -1,0 +1,239 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>abcok网址导航</title>
+    <script src="/js/jq_2.1.4.js"></script>
+    <script src="/js/x.js"></script>
+    <meta name="keywords" content="abcok网址导航" />
+    <meta name="description" content="abcok网址导航" />
+    <link href="/css/web/index.css" rel="stylesheet" type="text/css" />
+    <link href="/css/x.dialog.css" rel="stylesheet" />
+    <style type="text/css">
+        .slideTxtBox .bd { display: none; }
+        .links { width: 1000px; margin: 0 auto; border-left: 1px solid #9bc1e7; border-right: 1px solid #9bc1e7; border-top: 1px solid #9bc1e7; }
+        .links .c { display: none; border-bottom: 1px solid #9bc1e7; }
+        .links .c .ct { display: inline-block; margin: 5px; cursor: pointer; padding: 5px; }
+        .links .c .ct.on { background-color: #245b93; color: white; font-weight: bold; }
+        .links .bd { padding-top: 15px; padding-left: 15px; display: none; border-bottom: 1px solid #9bc1e7; }
+        .links .bd a { display: inline-block; margin-right: 15px; margin-bottom: 15px; padding-left: 25px; }
+        .quick { border: 1px solid #9bc1e7; width: 1000px; margin: -1px auto; }
+        .quick .c { display: inline-block; margin: 10px 40px; vertical-align: middle; }
+        .quick .c input { line-height: 30px; border: 2px solid #245b93; text-indent: 10px; width: 220px; }
+        .quick .btn { background: #245b93; color: white; display: block; height: 32px; line-height: 32px; width: 80px; text-align: center; cursor: pointer; }
+        .link .plus { display: inline-block; border: 1px solid #ccc; margin-left: 5px; width: 30px; text-align: center; line-height: normal; }
+        .my .btn { font-size: 12px; display: none; }
+        .my:hover .btn { display: inline-block; }
+        .L3 { margin-left: 190px; margin-top: -10px; }
+    </style>
+    <script type="text/javascript">
+        function search(obj, type) {
+            var w = $(obj).val();
+            if (w == "") { alert("输入搜索关键字！"); return; }
+            if (type == "baidu") {
+                window.open("https://www.baidu.com/s?wd=" + w + "", "blank");
+            } else {
+                window.open("https://www.bing.com/search?q=" + w + "", "blank");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="menu">
+        <div class="menu1">
+            <ul>
+                <li class="L1"> <a href="#" style="margin-top:8px;display:block;"><img src="/img/web/logo1.png" /></a> </li>
+                <li class="L2"><span><a href="#">设为首页</a></span></li>
+                <li class="L3">
+                    <a>
+                        <iframe allowtransparency="true" frameborder="0" width="410" height="75" scrolling="no" src="//tianqi.2345.com/plugin/widget/index.htm?s=1&z=1&t=1&v=0&d=2&bd=0&k=&f=004080&q=1&e=1&a=1&c=57687&w=410&h=75&align=center"></iframe>
+                    </a>
+                </li>
+                <li class="L4" id="menu"><span>#if($cu.user_id>0)$cu.uid <a href="javascript:do_logout();">退出 </a>#else<a href="/reg.html">注册 </a>/<a href="/login.html"> 登录</a>#end</span></li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+    <div class="search">
+        <div class="search_box">
+            <input type="text" class="txt" id="baidu" placeholder="输入关键字搜索" /><input type="button" class="btn-search" value="百度" onclick="search('#baidu','baidu')" />
+        </div>
+        <div class="search_box">
+            <input type="text" class="txt" id="bing" placeholder="输入关键字搜索" /><input type="button" class="btn-search" value="Bing" onclick="search('#bing','bing')" />
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="top01">
+            <div class="slideTxtBox">
+                <div class="hd">
+                    <ul>
+                        <li class="on">我的导航</li>
+                        #foreach($t in $tags)
+                        <li>$t.name</li>
+                        #end
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div class="bd" style="display:block;">
+                    #if($mylinks.count>0)
+                    <ul>
+                        #foreach($l in $mylinks)
+                        <li><a href="$l.url" target="_blank" style="background: url($l.icon) no-repeat left center / contain; " class="my"> $l.title <span onclick="do_del($l.url_id); return false;" class="btn">删除</span></a></li>
+                        #end
+                    </ul>
+                    #else
+                    <p style="text-align:center;padding:20px;">#if($cu.user_id>0)您还没有添加网址#else您还没有登陆#end</p>
+                    <p style="border-bottom:1px solid #9bc1e7;line-height:40px;margin:0 auto;width:96%;">以下是推荐网址：</p>
+                    <ul>
+                        #foreach($l in $tops)
+                        <li><a href="$l.url" target="_blank" style="background: url($l.icon) no-repeat left center / contain; " class="my"> $l.title <span onclick="do_del($l.url_id); return false;" class="btn">删除</span></a></li>
+                        #end
+                    </ul>
+                    #end
+                </div>
+                #foreach($t in $tags)
+                #set($list=$T.getLinksByTag($t.value))
+                <div class="bd">
+                    #if($list.Count()>0)
+                    <ul>
+                        #foreach($l in $list)
+                        <li><a href="$l.url" target="_blank" style="background: url($l.icon) no-repeat left center / contain; " class="link" data-id="$l.url_id" onclick="return !isquick;"> $l.title</a></li>
+                        #end
+                    </ul>
+                    #else
+                    <p style="text-align:center;padding:20px;">当前分类下暂无网址</p>
+                    #end
+                </div>
+                #end
+            </div>
+        </div>
+        #if($cu.user_id>0)
+        <div class="quick">
+            <div class="c" style="margin:10px 20px"><img src="/img/web/btn.png" style="vertical-align:top;width:76px;cursor:pointer;" title="快速添加现有网址" onclick="do_quick()" /></div>
+            <div class="c" style="margin-left:10px;margin-right:10px;">
+                <span class="">名称：</span><input type="text" placeholder="如：百度" id="u_name" />
+            </div>
+            <div class="c" style="margin-left:10px;margin-right:10px;">
+                <span class="">网址：</span><input type="text" placeholder="如：www.baidu.com" id="u_url" />
+            </div>
+            <div class="c" style="margin-left:-10px;"><span class="btn" onclick="do_put()">添加</span></div>
+        </div>
+        #end
+    </div>
+
+    <div class="links zh" style="margin-top:10px;">
+        <div class="c c1" style="display:block;">
+            #foreach($c in $T.getCates("zh"))<span class="ct" data-id="$c.value" data-lv="2" data-lg="zh">$c.name</span>#end
+        </div>
+        <div class="c c2"></div>
+        <div class="c c3"></div>
+        <div class="c c4"></div>
+        <div class="bd"></div>
+    </div>
+
+    <div class="links en" style="margin-top:10px;">
+        <div class="c c1" style="display:block;">
+            #foreach($c in $T.getCates("en"))<span class="ct" data-id="$c.value" data-lv="2" data-lg="en">$c.name</span>#end
+        </div>
+        <div class="c c2"></div>
+        <div class="c c3"></div>
+        <div class="c c4"></div>
+        <div class="bd"></div>
+    </div>
+
+    <div class="footer">
+        <div class="footer_nav">
+            <a href="#">关于我们</a> | <a href="#">法律申明</a> | <a href="#">联系我们</a> | <a href="/mgr/login.html" target="_blank">后台管理</a>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        var isquick = false;
+        $(function () {
+            $(".slideTxtBox .hd li").hover(function () {
+                $(this).parent().find("li").removeClass("on");
+                $(this).addClass("on");
+                $(".slideTxtBox .bd").hide();
+                $(".slideTxtBox .bd:eq(" + $(this).index() + ")").show();
+            });
+            $(".links").delegate(".ct", "click", function () {
+                var c = $(this).attr("data-id");
+                var l = parseInt($(this).attr("data-lv"));
+                var lg = $(this).attr("data-lg");
+                $(this).parent().find(".ct").removeClass("on");
+                $(this).addClass("on");
+                x.doapi("load", { cate: c, lg: lg }, function (d) {
+                    if (!d.issucc) return;
+
+                    var p = $(".links." + lg + " .c" + l)
+                    for (var i = l; i <= 4; i++) $(".links." + lg + " .c" + i).html("").hide();
+
+                    for (var i in d.cates) {
+                        var ct = d.cates[i];
+                        p.append('<span class="ct" data-id="' + ct.value + '" data-lv="' + (l + 1) + '" data-lg="' + lg + '">' + ct.name + '</span>');
+                    }
+                    if (d.cates.length > 0) p.show();
+
+                    var u = $(".links." + lg + " .bd");
+                    u.html("");
+                    for (var i in d.items) {
+                        var ur = d.items[i];
+                        u.append('<a data-id="' + ur.id + '" href="' + ur.url + '" target="_blank" style="background: url(' + ur.icon + ') no-repeat left center / contain; " class="link"  onclick="return !isquick;"> ' + ur.title + '</a>');
+                    }
+                    if (d.items.length == 0) u.html("<a>当前分类暂无网址</a>");
+                    else {
+                        if (isquick) { do_quick(true); }
+                    }
+                    u.show();
+
+                }, false)
+            });
+            $("a.link").delegate(".plus", "click", function () {
+                x.doapi("put", { id: $(this).parent().attr("data-id") }, function (d) {
+                    if (!d.issucc) return;
+                    alert("添加成功！");
+                }, false);
+                return false;
+                event.stopPropagation();
+            });
+        });
+        function do_del(id) {
+            if (!confirm("确定删除当前网址吗？")) { return; }
+            x.doapi("del", { id: id }, function (d) {
+                if (!d.issucc) return;
+                alert("网址删除成功");
+                document.location.reload();
+            }, false)
+        }
+        function do_quick(q) {
+            isquick = q == undefined ? !isquick : q;
+            $("a.link").each(function () {
+                var a = $(this);
+                a.find(".plus").remove();
+                if (isquick) { a.append("<span class='plus' title='快速添加到我的网址库'>+</span>"); }
+            });
+        }
+        function do_logout() {
+            x.doapi("logout", null, function (d) {
+                if (!d.issucc) return;
+                alert("您已经退出");
+                document.location.reload();
+            })
+        }
+        function do_put() {
+            var d = {
+                url: $("#u_url").val(),
+                name: $("#u_name").val()
+            };
+            if (!d.url) { alert("网址不能为空"); return; }
+            if (!d.name) { alert("网站名称不能为空"); return; }
+            x.doapi("put", d, function (d) {
+                if (!d.issucc) return;
+                alert("添加成功！");
+            })
+        }
+    </script>
+</body>
+</html>

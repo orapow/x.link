@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    #parse("com/_head.html")
+    <title>网址编辑 - $cfg.name</title>
+    <style type="text/css">
+        body { margin: 0; }
+        .x-form .row .li { vertical-align: top; }
+        .upload .imgs img { max-width: 80px; max-height: 60px; }
+    </style>
+</head>
+<body>
+    <x:form api="mgr.url.save">
+        <input type="hidden" name="id" value="$!item.url_id" x-check="" />
+        <x:pick title="分类" src="dict:link.cate.${lg}:2" name="cate" count="1" def="$!item.cate" />
+        <x:text title="标题" name="name" size="5" def="$!item.title" />
+        <x:text title="链接" name="url" size="5" def="$!item.url" />
+        <x:pick title="推荐" src="loc:是|否" name="top" mode="2" count="1" def="$!item.top" />
+        <x:pick title="标签" src="dict:link.tag" name="tags" count="5" def="$!item.tags" />
+        <x:upload name="icon" title="图标" count="1" tp="img" def="$!item.icon" />
+        <div class="btns">
+            <button type="submit" class="btn btn-primary"><i class="icon-ok"></i>提交保存</button>
+        </div>
+    </x:form>
+    <br />
+    <br />
+    <script type="text/javascript">
+        $("form:eq(0)").xform({
+            callback: function (d) {
+                if (!d.issucc) return;
+                document.location.href = "list.html";
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{133B22BE-39B8-47C5-9577-884A5F8F3EB6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>X.App</RootNamespace>
+    <AssemblyName>X.App</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.11.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\libs\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.XML" />
+    <Reference Include="X.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\libs\X.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="X.Json">
+      <HintPath>..\..\..\..\..\libs\X.Json.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Apis\load.cs" />
+    <Compile Include="Apis\logout.cs" />
+    <Compile Include="Apis\mgr\cate\bagsave.cs" />
+    <Compile Include="Apis\mgr\login.cs" />
+    <Compile Include="Apis\mgr\logout.cs" />
+    <Compile Include="Apis\mgr\setup.cs" />
+    <Compile Include="Apis\mgr\xmg.cs" />
+    <Compile Include="Apis\mgr\tag\del.cs" />
+    <Compile Include="Apis\mgr\tag\list.cs" />
+    <Compile Include="Apis\mgr\tag\save.cs" />
+    <Compile Include="Apis\mgr\cate\del.cs" />
+    <Compile Include="Apis\mgr\cate\list.cs" />
+    <Compile Include="Apis\mgr\cate\save.cs" />
+    <Compile Include="Apis\com\upload.cs" />
+    <Compile Include="Apis\login.cs" />
+    <Compile Include="Apis\mgr\url\del.cs" />
+    <Compile Include="Apis\mgr\url\list.cs" />
+    <Compile Include="Apis\mgr\url\save.cs" />
+    <Compile Include="Apis\del.cs" />
+    <Compile Include="Apis\put.cs" />
+    <Compile Include="Apis\reg.cs" />
+    <Compile Include="Apis\xapi.cs" />
+    <Compile Include="Com\Config.cs" />
+    <Compile Include="Com\DB.cs">
+      <DependentUpon>DB.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Com\DB.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Com\XTree.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Views\com\err.cs" />
+    <Compile Include="Views\mgr\cate\bag.cs" />
+    <Compile Include="Views\mgr\index.cs" />
+    <Compile Include="Views\mgr\login.cs" />
+    <Compile Include="Views\mgr\main.cs" />
+    <Compile Include="Views\mgr\xmg.cs" />
+    <Compile Include="Views\mgr\tag\edit.cs" />
+    <Compile Include="Views\mgr\tag\list.cs" />
+    <Compile Include="Views\mgr\cate\edit.cs" />
+    <Compile Include="Views\mgr\cate\list.cs" />
+    <Compile Include="Views\com\code.cs" />
+    <Compile Include="Views\com\dict.cs" />
+    <Compile Include="Views\mgr\url\edit.cs" />
+    <Compile Include="Views\mgr\url\list.cs" />
+    <Compile Include="Views\reg.cs" />
+    <Compile Include="Views\login.cs" />
+    <Compile Include="Views\index.cs" />
+    <Compile Include="Views\xview.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Com\DB.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DB.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CustomToolNamespace>X.App</CustomToolNamespace>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Com\DB.dbml.layout">
+      <DependentUpon>DB.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\X.Web\X.Web.csproj">
+      <Project>{6e4653a5-1350-4fb0-a52e-4fde25ae8ec9}</Project>
+      <Name>X.Web</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

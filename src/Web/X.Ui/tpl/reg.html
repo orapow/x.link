@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>注册 - 我的导航</title>
+    <script src="/js/jq_2.1.4.js"></script>
+    <script src="/js/x.js"></script>
+    <link href="/css/x.dialog.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="/css/web/login.css" />
+</head>
+<body>
+    <div id="box"></div>
+    <div class="cent-box register-box">
+        <div class="cent-box-header">
+            <h1 class="main-title hide">导航</h1>
+        </div>
+        <div class="cont-main clearfix">
+            <div class="index-tab">
+                <div class="index-slide-nav">
+                    <a href="/login.html">登录</a>
+                    <a href="/reg.html" class="active">注册</a>
+                    <div class="slide-bar slide-bar1"></div>
+                </div>
+            </div>
+            <form id="regform" name="regform">
+                <div class="login form">
+                    <div class="group">
+                        <div class="group-ipt user">
+                            <input type="text" id="txtUserName" name="uid" class="ipt" placeholder="请输入登录的用户名" onblur="show_code()" />
+                        </div>
+                        <div class="group-ipt password">
+                            <input type="password" id="txtPassword" name="pwd" class="ipt" placeholder="请输入6-20位的登录密码" />
+                        </div>
+                        <div class="group-ipt password1">
+                            <input type="password" id="txtPassword1" name="pwd1" class="ipt" placeholder="请再次输入登录密码" />
+                        </div>
+                        <div class="group-ipt verify">
+                            <input type="text" id="txtCode" name="code" class="ipt" placeholder="输入验证码" />
+                            <a class="send" title="点击切换验证码" href="javascript:;" onclick="ToggleCode(this, '/tools/verify_code.ashx');return false;">
+                                <img src="" class="imgcode" onclick="show_code()" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="button">
+                    <button type="button" class="login-btn register-btn" id="button" onclick="do_reg()">注册</button>
+                </div>
+            </form>
+            <script type="text/javascript">
+                function do_reg() {
+                    var ps = $("#regform").serialize().split("&");
+                    var d = {};
+                    for (var i in ps) {
+                        var p = ps[i].split("=");
+                        d[p[0]] = p[1];
+                    }
+                    if (!d.uid) { x.alert("用户名不能为空"); return; }
+                    if (!d.pwd) { x.alert("密码不能为空"); return; }
+                    if (!d.pwd1) { x.alert("重复密码不能为空"); return; }
+                    if (!d.code) { x.alert("验证码不能为空"); return; }
+                    if (d.pwd != d.pwd1) { x.alert("两次密码输入不同"); return; }
+
+                    x.doapi("reg", d, function (d) {
+                        if (!d.issucc) return;
+                        x.alert("注册成功，请登陆");
+                        document.location.href = "/login.html";
+                    });
+                }
+                function show_code() {
+                    var uid = $("#txtUserName").val();
+                    if (!uid) { x.alert("用户名不能为空"); return; }
+                    $(".imgcode").attr("src", "/com/code-" + uid + ".html?" + new Date().getTime());
+                }
+            </script>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2017 abcok.me</p>
+        <p>abcok.me我的网址导航</p>
+    </div>
+</body>
+</html>

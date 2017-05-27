@@ -1,0 +1,165 @@
+﻿* { padding: 0px; margin: 0px; }
+body { font-family: "微软雅黑"; padding: 0px; margin: 0px; width: 100%; font-size: 14px; }
+ul, ul li, p, h4, input, h3, h2, dl, dd, dt, h3, table, tr, td { padding: 0px; margin: 0px; list-style: none; }
+input { outline: none; border: none; font-family: "微软雅黑"; }
+input[type="text"], textarea { font-family: "微软雅黑"; font-size: 14px; color: #444; }
+input[type="button"] { cursor: pointer; outline: none; background: none; }
+img, a { border: none; text-decoration: none; outline: none; }
+a { color: black; }
+.clear { clear: both; }
+
+.menu1 { width: 100%; border-bottom: 1px solid #d1cdcd; }
+.menu ul { width: 1000px; margin: 0px auto; line-height: 80px; height: 80px; }
+.menu ul li { float: left; height: 100%; }
+.menu a { color: #5b84ae; }
+.L3 { margin-left: 265px; }
+.menu span { display: block; margin-left: 20px; margin-top: 5px; }
+.menu a:hover { color: orange; }
+
+.search { width: 1000px; height: 50px; margin: 0 auto; text-align: center; padding-top: 20px; border: 1px solid #9bc1e7; margin-top: 10px; }
+.search .search_box { border: 1px solid #245b93; width: 350px; float: left; margin-left: 100px; }
+.search .search_box .txt { width: 245px; height: 30px; padding-left: 5px; }
+.search .search_box .btn-search { width: 100px; height: 30px; background-color: #245b93; color: #fff; }
+
+.content { width: 100%; height: auto; }
+.top01 { width: 1000px; margin: 0px auto; border: 1px solid #9bc1e7; margin-top: 10px; }
+.mymenu { width: 100%; border-bottom: 1px solid #d1cdcd; height: 40px; }
+.mymenu p { display: block; float: left; height: 30px; font-size: 16px; width: auto; margin: 10px 0px 0px 30px; color: #666666; }
+.mymenu p:hover { cursor: pointer; border-bottom: 1px solid #245b93; color: #245b93; }
+.tab1 tr td a { float: left; }
+
+table { border-bottom: 1px solid #d1cdcd; }
+table tr { width: 100%; height: 50px; line-height: 50px; }
+table tr td { width: 140px; height: 50px; font-size: 14px; color: #333333; }
+table p { float: left; margin-left: 5px; margin-top: 8px; }
+table p a { line-height: 26px; }
+table p img { width: 23px; height: 23px; }
+table tr td a:hover { color: orange; }
+
+.addw { width: 100%; height: 60px; }
+.addw ul li { float: left; height: 50px; }
+.a1 { margin: 15px; display: block; width: 75px; height: 30px; background-image: url("/images/pao_07.png"); background-repeat: no-repeat; font-size: 13px; color: #ffffff; line-height: 25px; }
+.addw ul li p { float: left; margin: 15px 10px; height: 30px; }
+.addw input { border: 2px solid #245b93; width: 200px; height: 20px; }
+.p1 input { border: 2px solid #245b93; width: 300px; height: 20px; }
+.a2 { margin: 0px 5px; display: block; width: 80px; height: 25px; background-color: #245b93; color: #ffffff; text-align: center; }
+.a3 { display: block; width: 25px; height: 25px; background-image: url("/images/zhi_07.gif"); background-repeat: no-repeat; background-size: 25px 25px; float: left; margin-left: 55px; }
+.aa { display: block; color: #245b93; width: 80px; height: 30px; float: left; margin-left: 10px; }
+.a1:hover { color: orange; }
+.a2:hover { color: orange; }
+.a3:hover { color: orange; }
+.aa:hover { color: orange; }
+
+.top02 { width: 1000px; height: 420px; margin: 0px auto; border: 1px solid #9bc1e7; margin-top: 10px; text-align: center; }
+.u01 { border-bottom: 1px solid #d1cdcd; width: 100%; height: 40px; margin-top: 5px; }
+.u01 li { float: left; width: 80px; font-size: 16px; height: auto; margin-left: 15px; margin-bottom: 0px; color: #666666; }
+.u01 li a { margin-top: 10px; display: block; height: 30px; color: #666666; }
+.u01 li a:hover { border-bottom: 1px solid deepskyblue; color: #245b93; }
+.u01 a:hover { cursor: pointer; }
+
+.u02 li { width: 400px; height: 50px; }
+.p3 { width: 30px; height: 30px; background-image: url("/images/phone.jpg"); background-repeat: no-repeat; background-size: 30px 30px; float: left; }
+.p4 { width: 30px; height: 30px; background-image: url("/images/pwd.jpg"); background-repeat: no-repeat; background-size: 30px 30px; float: left; }
+.p3 { width: 30px; height: 30px; background-image: url("/images/phone.jpg"); background-repeat: no-repeat; background-size: 30px 30px; }
+.u02 input { border: 1px solid #9bc1e7; width: 235px; height: 28px; float: left; }
+.a4 { display: block; width: 80px; height: 30px; background-color: #ffffff; border: 1px solid #245b93; color: #245b93; float: left; text-align: center; margin: 0px 10px; line-height: 30px; }
+.a4:hover { background-color: #245b93; color: #ffffff; }
+.u02 li span { width: auto; height: auto; margin-left: 40px; margin-top: 6px; display: block; }
+.a9 { display: block; margin: 0px; width: 70px; height: 30px; float: left; font-size: 13px; line-height: 40px; color: #808080; }
+.a9:hover { color: orange; }
+.top02 .qie > ul:first-child { display: block; }
+
+/**内容页样式*/
+.u02 li { width: 100%; height: auto; letter-spacing: 2px; }
+.a10 { float: right; display: block; width: 80px; height: 30px; text-align: center; color: #ffffff; background-color: #245b93; font-size: 14px; margin: 20px 20px; line-height: 30px; }
+.u02 li img { float: left; margin: 5px 5px; width: 300px; height: 200px; margin: 20px 16px; }
+
+select { border: 1px solid #d1cdcd; width: 80px; height: 30px; font-size: 16px; float: left; margin: 20px; }
+.u02 li input { float: left; width: 80px; height: 30px; margin: 20px; }
+.a11:hover { background-color: #245b93; }
+table tr td { width: 250px; height: 46px; }
+.a11 { float: right; display: block; width: 80px; height: 30px; text-align: center; color: #ffffff; background-color: #bbbbbb; font-size: 14px; margin: 20px 20px; line-height: 30px; }
+
+.u02 li p { display: block; float: left; height: 80px; width: auto; line-height: 40px; margin-left: 20px; text-align: left; font-size: 12px; }
+
+.u02 li div { font-size: 12px; margin-left: 20px; letter-spacing: 2px; }
+.t1 { background-color: #f2f9ff; }
+.t2 { color: #d21f1f; }
+.u02 table tr td p { color: #d21f1f; }
+
+/*.u03{position: absolute;width:200px;height:200px;top:px;}*/
+.zmenu { width: 100%; border-top: 1px solid #d1cdcd; border-bottom: 1px solid #d1cdcd; height: 80px; margin-top: 10px; }
+.zmenu ul { width: 1000px; height: 60px; margin: 10px auto; }
+.zmenu ul li { float: left; height: 50px; width: auto; margin-left: 10px; }
+.zmenu .a5 { margin: 15px; display: block; width: 150px; height: 30px; color: #245b93; }
+.zmenu .a1 { margin: 15px; display: block; width: 80px; height: 30px; background-image: url("/images/pao_03.png"); background-repeat: no-repeat; font-size: 13px; color: #ffffff; line-height: 30px; }
+.zmenu ul li p { float: left; margin: 15px 5px; }
+.zmenu input { border: 2px solid #245b93; width: 200px; height: 20px; }
+.p1 input { border: 2px solid #245b93; width: 200px; height: 20px; }
+.zmenu .a2 { margin: 0px 5px; display: block; width: 80px; height: 25px; background-color: #245b93; color: #ffffff; text-align: center; }
+.zmenu .a2:hover { color: orange; }
+/*.zmenu .a1:hover{color:orange}*/
+
+.xcontent { height: auto; width: 1000px; height: auto; margin: 0 auto; border: 1px solid #9bc1e7; margin-top: -1px; }
+.leir { width: 1000px; height: 600px; margin: 0px auto; margin-top: 10px; }
+
+.cleft { width: 1000px; height: 590px; float: left; border: 1px solid #9bc1e7; }
+/*.cright{width:310px;height:590px;float:left;border:1px solid #9bc1e7;}*/
+
+.dropdown { width: 100%; height: 50px; }
+.city { width: 100%; height: 100px; background-color: #c7e0f5; }
+.region { width: 100%; height: 100px; background-color: #ddeefc; }
+.theme { width: 100%; height: 50px; background-color: #eef5fb; }
+
+.dropdown p { float: left; font-size: 15px; margin: 15px 10px; }
+.dropdown p:hover { text-decoration: underline; cursor: pointer; }
+
+.ctleft { height: 48px; width: 50px; float: left; }
+.ctleft p { color: #245b93; font-size: 18px; width: 50px; display: block; border-bottom: 1px dashed #808080; height: 48px; line-height: 48px; text-align: center; }
+.ctright { height: auto; width: auto; float: left; }
+.ctright table { border: none; }
+.ctright table tr { height: 46px; width: 1000px; border-bottom: 1px dashed #808080; display: block; font-size: 18px; }
+.ctright table tr td { height: 46px; width: 80px; }
+.ctright table tr td a { display: block; width: 50px; height: 30px; text-align: center; line-height: 30px; }
+.ctright table tr td a:hover { color: #ffffff; background-color: #245b93; cursor: pointer; }
+
+.sou ul { width: 100%; height: 60px; border-bottom: 1px solid #808080; }
+.sou ul li { float: left; width: 280px; height: 50px; margin: 10px 6px 0px 6px; }
+.sou ul li input { border: 1px solid #245b93; width: 190px; height: 28px; float: left; }
+.a6 { width: 80px; height: 30px; background-image: url("/images/by.jpg"); background-repeat: no-repeat; float: left; }
+.a7 { width: 80px; height: 30px; background-image: url("/images/by1.jpg"); background-repeat: no-repeat; float: left; }
+.a8 { width: 80px; height: 30px; background-image: url("/images/by2.jpg"); background-repeat: no-repeat; float: left; }
+.kong ul li { float: left; margin: 10px; }
+.kong a { color: #245b93; }
+
+.cright img { width: 310px; height: 140px; margin: 2px auto; }
+
+.footer { width: 100%; height: 100px; border-top: 1px solid #d1cdcd; margin-top: 20px; }
+.footer .footer_nav { padding: 20px; text-align: center; width: 1000px; margin: 0 auto; color: #ccc; }
+.footer .footer_nav a { color: #245b93; margin-left: 0; font-size: 14px; }
+
+/* 本例子css */
+.slideTxtBox { width: 100%; /*border-bottom:1px solid #ddd;*/ text-align: left; }
+.slideTxtBox .hd { line-height: 40px; background: #fff; padding: 0 10px 0 20px; border-bottom: 1px solid #ddd; position: relative; }
+.slideTxtBox .hd ul { }
+.slideTxtBox .hd ul li { float: left; padding: 0 15px; cursor: pointer; border-bottom: 2px solid white; }
+.slideTxtBox .hd ul li.on { height: 40px; border-color: #9bc1e7; }
+.slideTxtBox .hd span.more { float: right; }
+.slideTxtBox .hd span.more a { font-size: 12px; color: #666; }
+.slideTxtBox .hd span.more a:hover { color: #016daf; }
+.slideTxtBox .bd ul { padding: 15px; zoom: 1; height: 190px; }
+.slideTxtBox .bd li { height: 24px; line-height: 24px; float: left; margin-left: 45px; margin-bottom: 20px; }
+.slideTxtBox .bd li a { height: 24px; line-height: 24px; padding-left: 25px; }
+.slideTxtBox .bd li a img { width: 24px; height: 24px; }
+
+.slideTxtBox .bd div.tab_1 ul { height: 100%; padding: 15px; }
+.slideTxtBox .bd div.tab_1 ul li { float: left; border: 1px solid #245b93; width: 150px; height: 150px; margin-left: 35px; margin-bottom: 35px; }
+.slideTxtBox .bd div.tab_4 { padding: 15px; }
+
+
+/* 下面是前/后按钮代码，如果不需要删除即可 */
+.slideTxtBox .arrow { position: absolute; right: 10px; top: 0; }
+.slideTxtBox .arrow a { display: block; width: 5px; height: 9px; float: right; margin-right: 5px; margin-top: 10px; overflow: hidden; cursor: pointer; background: url("../images/arrow.png") 0 0 no-repeat; }
+.slideTxtBox .arrow .next { background-position: 0 -50px; }
+.slideTxtBox .arrow .prevStop { background-position: -60px 0; }
+.slideTxtBox .arrow .nextStop { background-position: -60px -50px; }

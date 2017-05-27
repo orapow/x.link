@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    #parse("com/_head.html")
+    <title>网址管理 - $cfg.name</title>
+    <link href="/css/x.grid.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="title">
+        <span class="main">网址管理</span>
+    </div>
+    <div class="search">
+        <x:form>
+            <x:pick title="分类" src="dict:link.cate.${lg}:2" name="cate" count="1" /><x:text name="key" tip="名称、网址" size="4" />
+            <button type="submit" class="btn btn-primary"><i class="icon-search"></i>搜索</button>
+            <button type="reset" class="btn"><i class="icon-remove"></i>清除</button>
+            <div class="btns">
+                <a class="btn btn-primary" href="edit--${lg}.html"><i class="icon-plus"></i>添加网址</a>
+            </div>
+        </x:form>
+    </div>
+    <div class="gridpanel">
+    </div>
+    <script type="text/javascript">
+        $("form:eq(0)").xform({
+            callback: function (d) {
+                d.page = 1;
+                g.getlist(d);
+            }
+        })
+
+        var cfg = {
+            el: ".gridpanel",
+            searchcon: { page: 1, limit: 30, lg: "$lg" },
+            api: "mgr.url.list",
+            fs: [
+                { t: "标题", f: "<img src='{icon}' style='height:20px;'/> {title}", w: 220 },
+                { t: "分类", f: "{cate}", w: 80, align: "center" },
+                { t: "网址", f: "{url}", w: 220 },
+            ],
+            btns: [
+                { txt: "编辑", ico: "edit", link: "edit-{id}-${lg}.html", confirm: false },
+                { txt: "删除", ico: "remove", act: "del" }
+            ]
+        };
+
+        cfg.cellclick = function (act, d) {
+            switch (act) {
+                case "del":
+                    dodel(d.id);
+                    break;
+            }
+        };
+
+        var g = x.grid.init(cfg);
+
+        function dodel(id) {
+            x.doapi("mgr.url.del", { id: id, }, function () {
+                g.getlist();
+            });
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    #parse("com/_head.html")
+    <title>设置面板 - $cfg.name</title>
+    <style type="text/css">
+        .tab { border-bottom: 1px solid #3086c8; width: 450px; }
+        .tab span.t { width: 90px; display: inline-block; line-height: 32px; text-align: center; margin-right: -1px; cursor: pointer; }
+        span.t.on { background-color: #3086c8; color: white; border-color: #3086c8; }
+        .tb { display: none; margin-top: 10px; }
+        .li { margin-bottom: 10px; }
+        .row .li { margin-bottom: 0; }
+    </style>
+</head>
+<body>
+    <div class="title">
+        <span class="main">设置面板</span>
+    </div>
+    <div class="form">
+        <x:form api="mgr.setup">
+            <x:text title="网站名" name="name" def="$!cfg.name" size="2" />
+            <x:text title="域名" name="domain" def="$!cfg.domain" size="3" />
+            <div class="btns">
+                <button type="submit" class="btn btn-primary"><i class="icon-ok"></i>提交保存</button>
+            </div>
+        </x:form>
+    </div>
+    <script type="text/javascript">
+        $(function () {
+            $("form:eq(0)").xform({
+                callback: function () { x.alert("修改成功"); }
+            });
+        });
+
+    </script>
+</body>
+</html>

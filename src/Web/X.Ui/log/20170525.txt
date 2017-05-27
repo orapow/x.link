@@ -1,0 +1,2291 @@
+
+时间：2017-05-25 09:08:12,367 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 20
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：56201353 
+
+时间：2017-05-25 09:08:12,373 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：56201360 
+
+时间：2017-05-25 09:08:58,837 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(:0) - 
+错误：致命错误 
+时间：56247824 
+System.Data.SqlClient.SqlException (0x80131904): 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: Named Pipes Provider, error: 40 - 无法打开到 SQL Server 的连接) ---> System.ComponentModel.Win32Exception (0x80004005): 找不到网络路径。
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 System.Data.Linq.SqlClient.SqlConnectionManager.UseConnection(IConnectionUser user)
+   在 System.Data.Linq.SqlClient.SqlProvider.get_IsSqlCe()
+   在 System.Data.Linq.SqlClient.SqlProvider.InitializeProviderMode()
+   在 System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   在 System.Data.Linq.Table`1.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   在 System.Linq.Queryable.SingleOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   在 X.App.Apis.mgr.login.Execute() 位置 D:\Pro\x.link\src\Web\X.App\Apis\mgr\login.cs:行号 34
+   在 X.Web.Apis.Api.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Apis\Api.cs:行号 30
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\x.link\src\X.Web\XApp.cs:行号 31
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:53,State:0,Class:20
+
+时间：2017-05-25 09:17:20,235 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：值不能为 null。
+参数名: source
+   在 System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+   在 X.App.Views.com.dict.tree_LoadList(Object id) 位置 D:\Pro\x.link\src\Web\X.App\Views\com\dict.cs:行号 52
+   在 X.App.XTree.getChild(TreeNode n, Int32 d) 位置 D:\Pro\x.link\src\Web\X.App\Com\XTree.cs:行号 63
+   在 X.App.XTree.InitTree(String title, Int32 deep) 位置 D:\Pro\x.link\src\Web\X.App\Com\XTree.cs:行号 27
+   在 X.App.Views.com.dict.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\com\dict.cs:行号 40
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：127099 
+
+时间：2017-05-25 09:17:20,271 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(:0) - 
+错误：致命错误 
+时间：127135 
+System.ArgumentNullException: 值不能为 null。
+参数名: source
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 112
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\x.link\src\X.Web\XApp.cs:行号 31
+
+时间：2017-05-25 09:17:47,815 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 23
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：154679 
+
+时间：2017-05-25 09:17:47,817 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：154681 
+
+时间：2017-05-25 09:18:55,242 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 23
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：222106 
+
+时间：2017-05-25 09:18:55,242 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：222106 
+
+时间：2017-05-25 09:25:27,743 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 20
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：13837 
+
+时间：2017-05-25 09:25:27,754 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 20
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：13848 
+
+时间：2017-05-25 09:25:27,773 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：13867 
+
+时间：2017-05-25 09:25:27,773 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：13867 
+
+时间：2017-05-25 09:25:28,796 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 20
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：14890 
+
+时间：2017-05-25 09:25:28,797 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：14891 
+
+时间：2017-05-25 09:25:32,713 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 20
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：18807 
+
+时间：2017-05-25 09:25:32,714 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：18807 
+
+时间：2017-05-25 09:25:36,117 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 20
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：22211 
+
+时间：2017-05-25 09:25:36,118 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：22212 
+
+时间：2017-05-25 09:25:41,662 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 20
+   在 X.App.Views.mgr.url.edit.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\url\edit.cs:行号 18
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：27755 
+
+时间：2017-05-25 09:25:41,662 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：27756 
+
+时间：2017-05-25 09:25:41,673 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 20
+   在 X.App.Views.mgr.url.edit.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\url\edit.cs:行号 18
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：27766 
+
+时间：2017-05-25 09:25:41,674 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：27767 
+
+时间：2017-05-25 09:25:41,685 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 20
+   在 X.App.Views.mgr.url.edit.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\url\edit.cs:行号 18
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：27779 
+
+时间：2017-05-25 09:25:41,686 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：27780 
+
+时间：2017-05-25 09:25:45,829 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 20
+   在 X.App.Views.mgr.url.edit.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\url\edit.cs:行号 18
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：31922 
+
+时间：2017-05-25 09:25:45,830 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：31923 
+
+时间：2017-05-25 09:26:28,821 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 20
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：74915 
+
+时间：2017-05-25 09:26:28,822 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：74915 
+
+时间：2017-05-25 09:26:29,673 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 20
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：75766 
+
+时间：2017-05-25 09:26:29,673 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：75767 
+
+时间：2017-05-25 09:27:40,110 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 20
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：146203 
+
+时间：2017-05-25 09:27:40,110 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：146204 
+
+时间：2017-05-25 09:27:50,301 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 20
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：156395 
+
+时间：2017-05-25 09:27:50,302 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：156395 
+
+时间：2017-05-25 09:29:22,071 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 23
+   在 X.App.Views.mgr.cate.edit.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\cate\edit.cs:行号 20
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：248165 
+
+时间：2017-05-25 09:29:22,072 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：248166 
+
+时间：2017-05-25 09:29:36,041 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：值不能为 null。
+参数名: source
+   在 System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   在 X.App.DBDataContext.GetDict(String code, String val) 位置 D:\Pro\x.link\src\Web\X.App\Com\DB.cs:行号 76
+   在 X.App.Views.mgr.cate.edit.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\cate\edit.cs:行号 24
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：262134 
+
+时间：2017-05-25 09:29:36,049 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(:0) - 
+错误：致命错误 
+时间：262142 
+System.ArgumentNullException: 值不能为 null。
+参数名: source
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 112
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\x.link\src\X.Web\XApp.cs:行号 31
+
+时间：2017-05-25 09:29:41,654 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：186 
+
+时间：2017-05-25 09:29:42,493 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 23
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：1025 
+
+时间：2017-05-25 09:29:42,609 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：1141 
+
+时间：2017-05-25 09:30:09,570 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(:0) - 
+错误：致命错误 
+时间：28101 
+System.ArgumentNullException: 值不能为 null。
+参数名: source
+   在 System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   在 X.App.Apis.mgr.url.list.Execute() 位置 D:\Pro\x.link\src\Web\X.App\Apis\mgr\url\list.cs:行号 33
+   在 X.Web.Apis.Api.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Apis\Api.cs:行号 30
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\x.link\src\X.Web\XApp.cs:行号 31
+
+时间：2017-05-25 09:30:10,646 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 23
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：29177 
+
+时间：2017-05-25 09:30:10,646 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：29177 
+
+时间：2017-05-25 09:30:11,282 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(:0) - 
+错误：致命错误 
+时间：29813 
+System.ArgumentNullException: 值不能为 null。
+参数名: source
+   在 System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   在 X.App.Apis.mgr.url.list.Execute() 位置 D:\Pro\x.link\src\Web\X.App\Apis\mgr\url\list.cs:行号 33
+   在 X.Web.Apis.Api.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Apis\Api.cs:行号 30
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\x.link\src\X.Web\XApp.cs:行号 31
+
+时间：2017-05-25 09:30:12,036 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(:0) - 
+错误：致命错误 
+时间：30567 
+System.ArgumentNullException: 值不能为 null。
+参数名: source
+   在 System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   在 X.App.Apis.mgr.url.list.Execute() 位置 D:\Pro\x.link\src\Web\X.App\Apis\mgr\url\list.cs:行号 33
+   在 X.Web.Apis.Api.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Apis\Api.cs:行号 30
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\x.link\src\X.Web\XApp.cs:行号 31
+
+时间：2017-05-25 09:30:13,265 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 23
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：31796 
+
+时间：2017-05-25 09:30:13,265 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：31797 
+
+时间：2017-05-25 09:30:15,889 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(:0) - 
+错误：致命错误 
+时间：34420 
+System.ArgumentNullException: 值不能为 null。
+参数名: source
+   在 System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   在 X.App.Apis.mgr.url.list.Execute() 位置 D:\Pro\x.link\src\Web\X.App\Apis\mgr\url\list.cs:行号 33
+   在 X.Web.Apis.Api.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Apis\Api.cs:行号 30
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\x.link\src\X.Web\XApp.cs:行号 31
+
+时间：2017-05-25 09:30:27,565 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(:0) - 
+错误：致命错误 
+时间：46096 
+System.ArgumentNullException: 值不能为 null。
+参数名: source
+   在 System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   在 X.App.Apis.mgr.url.list.Execute() 位置 D:\Pro\x.link\src\Web\X.App\Apis\mgr\url\list.cs:行号 33
+   在 X.Web.Apis.Api.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Apis\Api.cs:行号 30
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\x.link\src\X.Web\XApp.cs:行号 31
+
+时间：2017-05-25 09:30:33,166 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：值不能为 null。
+参数名: source
+   在 System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   在 X.App.DBDataContext.GetDict(String code, String val) 位置 D:\Pro\x.link\src\Web\X.App\Com\DB.cs:行号 76
+   在 X.App.Views.mgr.cate.edit.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\cate\edit.cs:行号 24
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：51697 
+
+时间：2017-05-25 09:30:33,166 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(:0) - 
+错误：致命错误 
+时间：51698 
+System.ArgumentNullException: 值不能为 null。
+参数名: source
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 112
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\x.link\src\X.Web\XApp.cs:行号 31
+
+时间：2017-05-25 09:30:45,268 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(:0) - 
+错误：致命错误 
+时间：63799 
+System.ArgumentNullException: 值不能为 null。
+参数名: source
+   在 System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   在 X.App.Apis.mgr.url.list.Execute() 位置 D:\Pro\x.link\src\Web\X.App\Apis\mgr\url\list.cs:行号 33
+   在 X.Web.Apis.Api.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Apis\Api.cs:行号 30
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\x.link\src\X.Web\XApp.cs:行号 31
+
+时间：2017-05-25 09:30:53,947 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(:0) - 
+错误：致命错误 
+时间：72478 
+System.ArgumentNullException: 值不能为 null。
+参数名: source
+   在 System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   在 X.App.Apis.mgr.url.list.Execute() 位置 D:\Pro\x.link\src\Web\X.App\Apis\mgr\url\list.cs:行号 33
+   在 X.Web.Apis.Api.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Apis\Api.cs:行号 30
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\x.link\src\X.Web\XApp.cs:行号 31
+
+时间：2017-05-25 09:32:09,045 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 23
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：156 
+
+时间：2017-05-25 09:32:09,215 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：326 
+
+时间：2017-05-25 09:32:13,190 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 23
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：4301 
+
+时间：2017-05-25 09:32:13,191 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：4302 
+
+时间：2017-05-25 09:32:33,606 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：值不能为 null。
+参数名: source
+   在 System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   在 X.App.DBDataContext.GetDict(String code, String val) 位置 D:\Pro\x.link\src\Web\X.App\Com\DB.cs:行号 76
+   在 X.App.Views.mgr.cate.edit.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\cate\edit.cs:行号 24
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：24717 
+
+时间：2017-05-25 09:32:33,611 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(:0) - 
+错误：致命错误 
+时间：24722 
+System.ArgumentNullException: 值不能为 null。
+参数名: source
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 112
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\x.link\src\X.Web\XApp.cs:行号 31
+
+时间：2017-05-25 09:35:48,341 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 23
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：219452 
+
+时间：2017-05-25 09:35:48,342 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：219453 
+
+时间：2017-05-25 09:35:56,768 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 20
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：227879 
+
+时间：2017-05-25 09:35:56,768 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：227879 
+
+时间：2017-05-25 09:36:13,275 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：值不能为 null。
+参数名: source
+   在 System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   在 X.App.DBDataContext.GetDict(String code, String val) 位置 D:\Pro\x.link\src\Web\X.App\Com\DB.cs:行号 76
+   在 X.App.Views.mgr.cate.edit.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\cate\edit.cs:行号 24
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：244386 
+
+时间：2017-05-25 09:36:13,276 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(:0) - 
+错误：致命错误 
+时间：244387 
+System.ArgumentNullException: 值不能为 null。
+参数名: source
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 112
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\x.link\src\X.Web\XApp.cs:行号 31
+
+时间：2017-05-25 09:36:22,898 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 20
+   在 X.App.Views.mgr.cate.edit.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\cate\edit.cs:行号 20
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：254009 
+
+时间：2017-05-25 09:36:22,899 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：254010 
+
+时间：2017-05-25 09:36:49,205 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：值不能为 null。
+参数名: source
+   在 System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   在 X.App.DBDataContext.GetDict(String code, String val) 位置 D:\Pro\x.link\src\Web\X.App\Com\DB.cs:行号 76
+   在 X.App.Views.mgr.cate.edit.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\cate\edit.cs:行号 24
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：280316 
+
+时间：2017-05-25 09:36:49,206 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(:0) - 
+错误：致命错误 
+时间：280317 
+System.ArgumentNullException: 值不能为 null。
+参数名: source
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 112
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\x.link\src\X.Web\XApp.cs:行号 31
+
+时间：2017-05-25 09:39:56,424 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 23
+   在 X.App.Views.mgr.cate.edit.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\cate\edit.cs:行号 20
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：162 
+
+时间：2017-05-25 09:39:56,624 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：362 
+
+时间：2017-05-25 09:39:59,699 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 23
+   在 X.App.Views.mgr.cate.edit.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\cate\edit.cs:行号 20
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：3437 
+
+时间：2017-05-25 09:39:59,701 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：3438 
+
+时间：2017-05-25 09:40:03,545 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：7283 
+
+时间：2017-05-25 09:40:06,415 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 23
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：10153 
+
+时间：2017-05-25 09:40:06,416 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：10154 
+
+时间：2017-05-25 09:40:10,606 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 23
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：14344 
+
+时间：2017-05-25 09:40:10,606 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：14344 
+
+时间：2017-05-25 09:40:28,799 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 20
+   在 X.App.Views.mgr.cate.edit.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\cate\edit.cs:行号 20
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：32536 
+
+时间：2017-05-25 09:40:28,799 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：32537 
+
+时间：2017-05-25 09:40:40,859 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 20
+   在 X.App.Views.mgr.cate.edit.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\cate\edit.cs:行号 20
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：44597 
+
+时间：2017-05-25 09:40:40,859 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：44597 
+
+时间：2017-05-25 09:40:47,289 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(:0) - 
+错误：致命错误 
+时间：51027 
+System.ArgumentNullException: 值不能为 null。
+参数名: source
+   在 System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+   在 X.App.Apis.mgr.url.list.Execute() 位置 D:\Pro\x.link\src\Web\X.App\Apis\mgr\url\list.cs:行号 33
+   在 X.Web.Apis.Api.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Apis\Api.cs:行号 30
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\x.link\src\X.Web\XApp.cs:行号 31
+
+时间：2017-05-25 09:40:52,850 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(:0) - 
+错误：致命错误 
+时间：56587 
+System.ArgumentNullException: 值不能为 null。
+参数名: source
+   在 System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+   在 X.App.Apis.mgr.url.list.Execute() 位置 D:\Pro\x.link\src\Web\X.App\Apis\mgr\url\list.cs:行号 33
+   在 X.Web.Apis.Api.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Apis\Api.cs:行号 30
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\x.link\src\X.Web\XApp.cs:行号 31
+
+时间：2017-05-25 09:40:55,409 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(:0) - 
+错误：致命错误 
+时间：59146 
+System.ArgumentNullException: 值不能为 null。
+参数名: source
+   在 System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+   在 X.App.Apis.mgr.url.list.Execute() 位置 D:\Pro\x.link\src\Web\X.App\Apis\mgr\url\list.cs:行号 33
+   在 X.Web.Apis.Api.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Apis\Api.cs:行号 30
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\x.link\src\X.Web\XApp.cs:行号 31
+
+时间：2017-05-25 09:41:03,403 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(:0) - 
+错误：致命错误 
+时间：67141 
+System.ArgumentNullException: 值不能为 null。
+参数名: source
+   在 System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+   在 X.App.Apis.mgr.url.list.Execute() 位置 D:\Pro\x.link\src\Web\X.App\Apis\mgr\url\list.cs:行号 33
+   在 X.Web.Apis.Api.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Apis\Api.cs:行号 30
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\x.link\src\X.Web\XApp.cs:行号 31
+
+时间：2017-05-25 09:41:04,758 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 20
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：68496 
+
+时间：2017-05-25 09:41:04,759 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：68497 
+
+时间：2017-05-25 09:41:08,884 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 20
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：72622 
+
+时间：2017-05-25 09:41:08,884 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：72622 
+
+时间：2017-05-25 09:41:21,534 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(:0) - 
+错误：致命错误 
+时间：85272 
+System.ArgumentNullException: 值不能为 null。
+参数名: source
+   在 System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+   在 X.App.Apis.mgr.url.list.Execute() 位置 D:\Pro\x.link\src\Web\X.App\Apis\mgr\url\list.cs:行号 33
+   在 X.Web.Apis.Api.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Apis\Api.cs:行号 30
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\x.link\src\X.Web\XApp.cs:行号 31
+
+时间：2017-05-25 09:41:37,656 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 23
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：533 
+
+时间：2017-05-25 09:41:38,151 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：1028 
+
+时间：2017-05-25 09:41:48,918 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 23
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：11795 
+
+时间：2017-05-25 09:41:48,939 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：11816 
+
+时间：2017-05-25 09:42:10,191 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(:0) - 
+错误：致命错误 
+时间：33068 
+System.ArgumentNullException: 值不能为 null。
+参数名: source
+   在 System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+   在 X.App.Apis.mgr.url.list.Execute() 位置 D:\Pro\x.link\src\Web\X.App\Apis\mgr\url\list.cs:行号 33
+   在 X.Web.Apis.Api.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Apis\Api.cs:行号 30
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\x.link\src\X.Web\XApp.cs:行号 31
+
+时间：2017-05-25 09:42:55,864 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 23
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：529 
+
+时间：2017-05-25 09:42:55,864 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 20
+   在 X.App.Views.mgr.cate.edit.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\cate\edit.cs:行号 20
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：529 
+
+时间：2017-05-25 09:42:56,179 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：844 
+
+时间：2017-05-25 09:42:56,180 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：845 
+
+时间：2017-05-25 09:43:21,862 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 20
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：26527 
+
+时间：2017-05-25 09:43:21,870 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：26535 
+
+时间：2017-05-25 09:43:32,185 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：36850 
+
+时间：2017-05-25 09:43:54,096 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(:0) - 
+错误：致命错误 
+时间：58761 
+System.ArgumentNullException: 值不能为 null。
+参数名: source
+   在 System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+   在 X.App.Apis.mgr.url.list.Execute() 位置 D:\Pro\x.link\src\Web\X.App\Apis\mgr\url\list.cs:行号 33
+   在 X.Web.Apis.Api.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Apis\Api.cs:行号 30
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\x.link\src\X.Web\XApp.cs:行号 31
+
+时间：2017-05-25 09:44:02,750 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 20
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：67415 
+
+时间：2017-05-25 09:44:02,759 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：67424 
+
+时间：2017-05-25 09:45:32,071 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 23
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：156736 
+
+时间：2017-05-25 09:45:32,083 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：156748 
+
+时间：2017-05-25 09:46:54,473 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 20
+   在 X.App.Views.mgr.cate.edit.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\cate\edit.cs:行号 20
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：66323 
+
+时间：2017-05-25 09:46:54,550 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：66400 
+
+时间：2017-05-25 09:48:00,106 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 23
+   在 X.App.Views.mgr.cate.edit.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\cate\edit.cs:行号 20
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：45688 
+
+时间：2017-05-25 09:48:00,133 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：45715 
+
+时间：2017-05-25 09:48:06,817 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：52400 
+
+时间：2017-05-25 09:48:09,300 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 23
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：54882 
+
+时间：2017-05-25 09:48:09,301 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：54883 
+
+时间：2017-05-25 09:48:47,686 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 23
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：93268 
+
+时间：2017-05-25 09:48:47,687 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：93269 
+
+时间：2017-05-25 09:53:47,231 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 23
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：148 
+
+时间：2017-05-25 09:53:47,395 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：311 
+
+时间：2017-05-25 09:56:26,152 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(:0) - 
+错误：致命错误 
+时间：159069 
+System.InvalidOperationException: 可为空的对象必须具有一个值。
+   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Nullable`1.get_Value()
+   在 X.App.Apis.mgr.cate.list.<>c.<tree_LoadList>b__10_1(x_dict m) 位置 D:\Pro\x.link\src\Web\X.App\Apis\mgr\cate\list.cs:行号 34
+   在 System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 X.App.Apis.mgr.cate.list.tree_LoadList(Object id) 位置 D:\Pro\x.link\src\Web\X.App\Apis\mgr\cate\list.cs:行号 34
+   在 X.App.XTree.getChild(TreeNode n, Int32 d) 位置 D:\Pro\x.link\src\Web\X.App\Com\XTree.cs:行号 63
+   在 X.App.XTree.getChild(TreeNode n, Int32 d) 位置 D:\Pro\x.link\src\Web\X.App\Com\XTree.cs:行号 72
+   在 X.App.XTree.InitTree(String title, Int32 deep) 位置 D:\Pro\x.link\src\Web\X.App\Com\XTree.cs:行号 27
+   在 X.App.Apis.mgr.cate.list.Execute() 位置 D:\Pro\x.link\src\Web\X.App\Apis\mgr\cate\list.cs:行号 21
+   在 X.Web.Apis.Api.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Apis\Api.cs:行号 30
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\x.link\src\X.Web\XApp.cs:行号 31
+
+时间：2017-05-25 09:56:29,854 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(:0) - 
+错误：致命错误 
+时间：162771 
+System.InvalidOperationException: 可为空的对象必须具有一个值。
+   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Nullable`1.get_Value()
+   在 X.App.Apis.mgr.cate.list.<>c.<tree_LoadList>b__10_1(x_dict m) 位置 D:\Pro\x.link\src\Web\X.App\Apis\mgr\cate\list.cs:行号 34
+   在 System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 X.App.Apis.mgr.cate.list.tree_LoadList(Object id) 位置 D:\Pro\x.link\src\Web\X.App\Apis\mgr\cate\list.cs:行号 34
+   在 X.App.XTree.getChild(TreeNode n, Int32 d) 位置 D:\Pro\x.link\src\Web\X.App\Com\XTree.cs:行号 63
+   在 X.App.XTree.getChild(TreeNode n, Int32 d) 位置 D:\Pro\x.link\src\Web\X.App\Com\XTree.cs:行号 72
+   在 X.App.XTree.InitTree(String title, Int32 deep) 位置 D:\Pro\x.link\src\Web\X.App\Com\XTree.cs:行号 27
+   在 X.App.Apis.mgr.cate.list.Execute() 位置 D:\Pro\x.link\src\Web\X.App\Apis\mgr\cate\list.cs:行号 21
+   在 X.Web.Apis.Api.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Apis\Api.cs:行号 30
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\x.link\src\X.Web\XApp.cs:行号 31
+
+时间：2017-05-25 09:57:35,631 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 23
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：155 
+
+时间：2017-05-25 09:57:35,810 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：334 
+
+时间：2017-05-25 09:57:45,254 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(:0) - 
+错误：致命错误 
+时间：9778 
+System.InvalidOperationException: 可为空的对象必须具有一个值。
+   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Nullable`1.get_Value()
+   在 X.App.Apis.mgr.cate.list.<>c.<tree_LoadList>b__10_1(x_dict m) 位置 D:\Pro\x.link\src\Web\X.App\Apis\mgr\cate\list.cs:行号 34
+   在 System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 X.App.Apis.mgr.cate.list.tree_LoadList(Object id) 位置 D:\Pro\x.link\src\Web\X.App\Apis\mgr\cate\list.cs:行号 34
+   在 X.App.XTree.getChild(TreeNode n, Int32 d) 位置 D:\Pro\x.link\src\Web\X.App\Com\XTree.cs:行号 63
+   在 X.App.XTree.getChild(TreeNode n, Int32 d) 位置 D:\Pro\x.link\src\Web\X.App\Com\XTree.cs:行号 72
+   在 X.App.XTree.InitTree(String title, Int32 deep) 位置 D:\Pro\x.link\src\Web\X.App\Com\XTree.cs:行号 27
+   在 X.App.Apis.mgr.cate.list.Execute() 位置 D:\Pro\x.link\src\Web\X.App\Apis\mgr\cate\list.cs:行号 21
+   在 X.Web.Apis.Api.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Apis\Api.cs:行号 30
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\x.link\src\X.Web\XApp.cs:行号 31
+
+时间：2017-05-25 09:57:48,983 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(:0) - 
+错误：致命错误 
+时间：13507 
+System.InvalidOperationException: 可为空的对象必须具有一个值。
+   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Nullable`1.get_Value()
+   在 X.App.Apis.mgr.cate.list.<>c.<tree_LoadList>b__10_1(x_dict m) 位置 D:\Pro\x.link\src\Web\X.App\Apis\mgr\cate\list.cs:行号 34
+   在 System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 X.App.Apis.mgr.cate.list.tree_LoadList(Object id) 位置 D:\Pro\x.link\src\Web\X.App\Apis\mgr\cate\list.cs:行号 34
+   在 X.App.XTree.getChild(TreeNode n, Int32 d) 位置 D:\Pro\x.link\src\Web\X.App\Com\XTree.cs:行号 63
+   在 X.App.XTree.getChild(TreeNode n, Int32 d) 位置 D:\Pro\x.link\src\Web\X.App\Com\XTree.cs:行号 72
+   在 X.App.XTree.InitTree(String title, Int32 deep) 位置 D:\Pro\x.link\src\Web\X.App\Com\XTree.cs:行号 27
+   在 X.App.Apis.mgr.cate.list.Execute() 位置 D:\Pro\x.link\src\Web\X.App\Apis\mgr\cate\list.cs:行号 21
+   在 X.Web.Apis.Api.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Apis\Api.cs:行号 30
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\x.link\src\X.Web\XApp.cs:行号 31
+
+时间：2017-05-25 09:59:23,645 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 23
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：163 
+
+时间：2017-05-25 09:59:23,814 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：332 
+
+时间：2017-05-25 09:59:32,255 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 23
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：8773 
+
+时间：2017-05-25 09:59:32,256 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：8774 
+
+时间：2017-05-25 10:01:38,739 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 23
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：135257 
+
+时间：2017-05-25 10:01:38,740 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：135258 
+
+时间：2017-05-25 10:02:18,557 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 23
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：154 
+
+时间：2017-05-25 10:02:18,723 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：319 
+
+时间：2017-05-25 10:02:28,063 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户名或密码不正确 ","code":"0x0007"} 
+时间：9659 
+
+时间：2017-05-25 10:04:16,063 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 23
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：117659 
+
+时间：2017-05-25 10:04:16,063 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：117660 
+
+时间：2017-05-25 10:05:06,926 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 23
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：168522 
+
+时间：2017-05-25 10:05:06,927 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：168523 
+
+时间：2017-05-25 10:06:06,439 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：191 
+
+时间：2017-05-25 10:06:09,242 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：572 
+
+时间：2017-05-25 10:06:10,903 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：2233 
+
+时间：2017-05-25 10:06:13,637 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 23
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：4968 
+
+时间：2017-05-25 10:06:13,698 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：5028 
+
+时间：2017-05-25 10:17:06,288 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(:0) - 
+错误：致命错误 
+时间：657618 
+System.FormatException: 输入字符串的格式不正确。
+   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   在 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.Int32.Parse(String s)
+   在 X.Web.XFace.Checker.check(Object[] attr, String v) 位置 D:\Pro\x.link\src\X.Web\XFace.cs:行号 106
+   在 X.Web.XFace.SetParms(NameValueCollection parms) 位置 D:\Pro\x.link\src\X.Web\XFace.cs:行号 52
+   在 X.Web.Apis.Api.InitApi() 位置 D:\Pro\x.link\src\X.Web\Apis\Api.cs:行号 23
+   在 X.App.Apis.xapi.InitApi() 位置 D:\Pro\x.link\src\Web\X.App\Apis\xapi.cs:行号 16
+   在 X.Web.Apis.Api.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Apis\Api.cs:行号 28
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\x.link\src\X.Web\XApp.cs:行号 31
+
+时间：2017-05-25 10:18:12,499 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"参数不正确 密码至少6个字符","code":"0x0004"} 
+时间：5488 
+
+时间：2017-05-25 10:18:41,116 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"参数不正确 密码至少6个字符","code":"0x0004"} 
+时间：34105 
+
+时间：2017-05-25 10:19:12,756 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"参数不正确 密码至少6个字符","code":"0x0004"} 
+时间：65745 
+
+时间：2017-05-25 10:20:16,134 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"参数不正确 密码至少6个字符","code":"0x0004"} 
+时间：129123 
+
+时间：2017-05-25 10:20:19,259 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"参数不正确 密码最多0个字符","code":"0x0004"} 
+时间：132248 
+
+时间：2017-05-25 10:20:46,590 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"未知错误代码(验证码不正确)","code":"验证码不正确"} 
+时间：6566 
+
+时间：2017-05-25 10:20:56,300 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"未知错误代码(验证码不正确)","code":"验证码不正确"} 
+时间：16276 
+
+时间：2017-05-25 10:23:44,535 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"未知错误代码(验证码不正确)","code":"验证码不正确"} 
+时间：184511 
+
+时间：2017-05-25 10:23:51,175 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"未知错误代码(验证码不正确)","code":"验证码不正确"} 
+时间：191151 
+
+时间：2017-05-25 10:24:12,093 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"未知错误代码(验证码不正确)","code":"验证码不正确"} 
+时间：3640 
+
+时间：2017-05-25 10:24:41,837 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"未知错误代码(验证码不正确)","code":"验证码不正确"} 
+时间：4702 
+
+时间：2017-05-25 10:25:24,407 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"未知错误代码(验证码不正确)","code":"验证码不正确"} 
+时间：13682 
+
+时间：2017-05-25 10:26:10,955 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"未知错误代码(T用户已经存在)","code":"T用户已经存在"} 
+时间：60230 
+
+时间：2017-05-25 10:27:08,503 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：Unable to find resource 'login.html'
+   在 NVelocity.Runtime.Resource.ResourceManagerImpl.LoadResource(String resourceName, ResourceType resourceType, String encoding)
+   在 NVelocity.Runtime.Resource.ResourceManagerImpl.GetResource(String resourceName, ResourceType resourceType, String encoding)
+   在 NVelocity.Runtime.RuntimeInstance.GetTemplate(String name)
+   在 NVelocity.App.Velocity.GetTemplate(String name)
+   在 X.Web.Com.Tpl.Merge(String templatePath, IDictionary`2 dict) 位置 D:\Pro\x.link\src\X.Web\Com\Tpl.cs:行号 76
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 103 
+时间：40433 
+
+时间：2017-05-25 10:27:08,583 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(:0) - 
+错误：致命错误 
+时间：40513 
+NVelocity.Exception.ResourceNotFoundException: Unable to find resource 'login.html'
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 112
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\x.link\src\X.Web\XApp.cs:行号 31
+
+时间：2017-05-25 10:30:59,375 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"参数不正确 密码至少6个字符","code":"0x0004"} 
+时间：102018 
+
+时间：2017-05-25 10:31:06,591 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"未知错误代码(T用户名或密码不正确)","code":"T用户名或密码不正确"} 
+时间：109234 
+
+时间：2017-05-25 10:31:57,929 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"参数不正确 密码至少6个字符","code":"0x0004"} 
+时间：3773 
+
+时间：2017-05-25 10:31:59,733 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"未知错误代码(T用户名或密码不正确)","code":"T用户名或密码不正确"} 
+时间：5578 
+
+时间：2017-05-25 10:59:20,770 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 23
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：646222 
+
+时间：2017-05-25 10:59:20,810 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：646262 
+
+时间：2017-05-25 11:04:10,679 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 23
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：936132 
+
+时间：2017-05-25 11:04:10,680 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：936132 
+
+时间：2017-05-25 11:04:14,409 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 23
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：939861 
+
+时间：2017-05-25 11:04:14,409 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：939862 
+
+时间：2017-05-25 11:08:43,498 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"参数不正确 用户名最多16个字符","code":"0x0004"} 
+时间：1208951 
+
+时间：2017-05-25 11:08:55,294 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"参数不正确 用户名最多16个字符","code":"0x0004"} 
+时间：1220746 
+
+时间：2017-05-25 11:09:17,702 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"参数不正确 用户名至少6个字符","code":"0x0004"} 
+时间：1243155 
+
+时间：2017-05-25 11:13:58,168 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 20
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：1523620 
+
+时间：2017-05-25 11:13:58,169 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：1523621 
+
+时间：2017-05-25 11:20:39,496 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：207 
+
+时间：2017-05-25 11:20:39,651 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：362 
+
+时间：2017-05-25 11:20:47,633 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 23
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：8345 
+
+时间：2017-05-25 11:20:47,752 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：8463 
+
+时间：2017-05-25 11:20:49,028 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 23
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：9739 
+
+时间：2017-05-25 11:20:49,029 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：9740 
+
+时间：2017-05-25 11:21:25,833 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 23
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：46544 
+
+时间：2017-05-25 11:21:25,834 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：46545 
+
+时间：2017-05-25 11:34:52,832 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 23
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：853543 
+
+时间：2017-05-25 11:34:52,832 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：853543 
+
+时间：2017-05-25 11:34:54,819 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 23
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：855530 
+
+时间：2017-05-25 11:34:54,819 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：855531 
+
+时间：2017-05-25 11:34:58,122 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 23
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：858834 
+
+时间：2017-05-25 11:34:58,123 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：858835 
+
+时间：2017-05-25 11:35:05,722 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 23
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：866434 
+
+时间：2017-05-25 11:35:05,723 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：866435 
+
+时间：2017-05-25 11:42:08,115 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 23
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：19990 
+
+时间：2017-05-25 11:42:08,250 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：20125 
+
+时间：2017-05-25 11:42:10,721 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 23
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：22595 
+
+时间：2017-05-25 11:42:10,722 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：22597 
+
+时间：2017-05-25 11:42:14,279 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 23
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：26153 
+
+时间：2017-05-25 11:42:14,279 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：26153 
+
+时间：2017-05-25 11:42:16,536 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 23
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：28410 
+
+时间：2017-05-25 11:42:16,537 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：28411 
+
+时间：2017-05-25 11:42:17,685 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 23
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：29559 
+
+时间：2017-05-25 11:42:17,686 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：29560 
+
+时间：2017-05-25 11:42:21,672 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 23
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：33547 
+
+时间：2017-05-25 11:42:21,673 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：33547 
+
+时间：2017-05-25 11:42:23,255 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 23
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：35130 
+
+时间：2017-05-25 11:42:23,256 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：35130 
+
+时间：2017-05-25 11:46:23,966 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 20
+   在 X.App.Views.mgr.cate.edit.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\cate\edit.cs:行号 20
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：275840 
+
+时间：2017-05-25 11:46:23,967 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：275841 
+
+时间：2017-05-25 12:06:47,532 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 23
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：1499406 
+
+时间：2017-05-25 12:06:47,532 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：1499407 
+
+时间：2017-05-25 12:06:53,604 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 23
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：1505478 
+
+时间：2017-05-25 12:06:53,604 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：1505479 
+
+时间：2017-05-25 12:06:58,699 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 23
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：1510573 
+
+时间：2017-05-25 12:06:58,699 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：1510574 
+
+时间：2017-05-25 12:07:01,465 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：1513340 
+
+时间：2017-05-25 12:31:03,835 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 23
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：46673 
+
+时间：2017-05-25 12:31:03,873 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：46712 
+
+时间：2017-05-25 12:31:05,008 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 23
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：47846 
+
+时间：2017-05-25 12:31:05,008 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：47847 
+
+时间：2017-05-25 14:10:47,859 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"网址不存在 ","code":"0x0008"} 
+时间：5401 
+
+时间：2017-05-25 14:43:24,486 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 23
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：1962028 
+
+时间：2017-05-25 14:43:24,492 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：1962035 
+
+时间：2017-05-25 14:43:30,590 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 23
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：1968132 
+
+时间：2017-05-25 14:43:30,591 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：1968133 
+
+时间：2017-05-25 14:43:58,052 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"分类不存在 ","code":"0x0009"} 
+时间：1995595 
+
+时间：2017-05-25 14:44:21,875 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 20
+   在 X.App.Views.mgr.cate.edit.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\cate\edit.cs:行号 20
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：2019417 
+
+时间：2017-05-25 14:44:21,876 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：2019418 
+
+时间：2017-05-25 14:44:47,814 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 20
+   在 X.App.Views.mgr.cate.edit.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\cate\edit.cs:行号 20
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：2045357 
+
+时间：2017-05-25 14:44:47,815 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：2045358 
+
+时间：2017-05-25 14:45:45,748 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 20
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：2103290 
+
+时间：2017-05-25 14:45:45,749 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：2103291 
+
+时间：2017-05-25 14:46:00,740 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 20
+   在 X.App.Views.mgr.cate.edit.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\cate\edit.cs:行号 20
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：2118282 
+
+时间：2017-05-25 14:46:00,743 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：2118285 
+
+时间：2017-05-25 14:47:11,075 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"分类不存在 ","code":"0x0009"} 
+时间：2188617 
+
+时间：2017-05-25 14:51:54,119 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"分类不存在 ","code":"0x0009"} 
+时间：2471662 
+
+时间：2017-05-25 15:12:29,747 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 20
+   在 X.App.Views.mgr.cate.edit.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\cate\edit.cs:行号 20
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：3707289 
+
+时间：2017-05-25 15:12:29,748 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：3707290 
+
+时间：2017-05-25 15:12:29,891 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 20
+   在 X.App.Views.mgr.cate.edit.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\cate\edit.cs:行号 20
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：3707433 
+
+时间：2017-05-25 15:12:29,893 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：3707435 
+
+时间：2017-05-25 15:12:29,898 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 20
+   在 X.App.Views.mgr.cate.edit.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\cate\edit.cs:行号 20
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：3707440 
+
+时间：2017-05-25 15:12:29,898 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：3707440 
+
+时间：2017-05-25 15:12:37,236 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"缺少参数 名称","code":"0x0003"} 
+时间：3714779 
+
+时间：2017-05-25 15:12:46,964 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"分类不存在 ","code":"0x0009"} 
+时间：3724507 
+
+时间：2017-05-25 15:19:20,529 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"分类不存在 ","code":"0x0009"} 
+时间：4118072 
+
+时间：2017-05-25 15:19:33,506 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"分类不存在 ","code":"0x0009"} 
+时间：4131048 
+
+时间：2017-05-25 15:25:54,317 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"分类不存在 ","code":"0x0009"} 
+时间：4511859 
+
+时间：2017-05-25 16:30:17,212 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"分类不存在 ","code":"0x0009"} 
+时间：8374754 
+
+时间：2017-05-25 16:30:59,890 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 20
+   在 X.App.Views.mgr.tag.edit.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\tag\edit.cs:行号 20
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：8417432 
+
+时间：2017-05-25 16:30:59,890 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：8417432 
+
+时间：2017-05-25 16:31:48,800 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 20
+   在 X.App.Views.mgr.tag.edit.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\tag\edit.cs:行号 20
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：8466342 
+
+时间：2017-05-25 16:31:48,801 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：8466343 
+
+时间：2017-05-25 16:32:02,841 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 20
+   在 X.App.Views.mgr.tag.edit.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\tag\edit.cs:行号 20
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：8480383 
+
+时间：2017-05-25 16:32:02,842 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：8480384 
+
+时间：2017-05-25 16:36:10,405 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 23
+   在 X.App.Views.mgr.tag.edit.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\tag\edit.cs:行号 20
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：367 
+
+时间：2017-05-25 16:36:10,747 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：709 
+
+时间：2017-05-25 16:36:18,766 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：178 
+
+时间：2017-05-25 16:36:41,875 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 23
+   在 X.App.Views.mgr.tag.edit.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\tag\edit.cs:行号 20
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：23288 
+
+时间：2017-05-25 16:36:41,878 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：23291 
+
+时间：2017-05-25 16:36:55,741 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户名或密码不正确 ","code":"0x0007"} 
+时间：37154 
+
+时间：2017-05-25 16:37:05,894 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"验证码不正确 ","code":"0x0006"} 
+时间：47306 
+
+时间：2017-05-25 17:26:18,894 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\xmg.cs:行号 23
+   在 X.App.Views.mgr.tag.edit.InitDict() 位置 D:\Pro\x.link\src\Web\X.App\Views\mgr\tag\edit.cs:行号 20
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.link\src\X.Web\Views\View.cs:行号 102 
+时间：199 
+
+时间：2017-05-25 17:26:19,163 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：468 
+
+时间：2017-05-25 17:26:22,099 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：3404 

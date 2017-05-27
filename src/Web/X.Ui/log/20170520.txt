@@ -1,0 +1,226 @@
+
+时间：2017-05-20 17:24:03,606 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"接口不存在 cate.save","code":"0x0002"} 
+时间：28796 
+
+时间：2017-05-20 17:25:01,625 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"接口不存在 mgr.chapter.list","code":"0x0002"} 
+时间：10691 
+
+时间：2017-05-20 17:30:07,588 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(:0) - 
+错误：致命错误 
+时间：189 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Com.XForm.pick.init(String body) 位置 D:\Pro\yt\city\src\X.Web\Com\XForm.cs:行号 294
+   在 X.Web.Com.XForm.<>c.<loadcts>b__4_0(Match o) 位置 D:\Pro\yt\city\src\X.Web\Com\XForm.cs:行号 58
+   在 System.Text.RegularExpressions.RegexReplacement.Replace(MatchEvaluator evaluator, Regex regex, String input, Int32 count, Int32 startat)
+   在 System.Text.RegularExpressions.Regex.Replace(String input, MatchEvaluator evaluator, Int32 count, Int32 startat)
+   在 System.Text.RegularExpressions.Regex.Replace(String input, MatchEvaluator evaluator)
+   在 X.Web.Com.XForm.loadcts(String body) 位置 D:\Pro\yt\city\src\X.Web\Com\XForm.cs:行号 55
+   在 X.Web.Com.XForm.form.init(String body) 位置 D:\Pro\yt\city\src\X.Web\Com\XForm.cs:行号 127
+   在 X.Web.Com.XForm.Parse(String html) 位置 D:\Pro\yt\city\src\X.Web\Com\XForm.cs:行号 71
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\yt\city\src\X.Web\Views\View.cs:行号 124
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\city\src\X.Web\XApp.cs:行号 31
+
+时间：2017-05-20 17:30:21,639 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(:0) - 
+错误：致命错误 
+时间：2637 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Com.XForm.pick.init(String body) 位置 D:\Pro\yt\city\src\X.Web\Com\XForm.cs:行号 294
+   在 X.Web.Com.XForm.<>c.<loadcts>b__4_0(Match o) 位置 D:\Pro\yt\city\src\X.Web\Com\XForm.cs:行号 58
+   在 System.Text.RegularExpressions.RegexReplacement.Replace(MatchEvaluator evaluator, Regex regex, String input, Int32 count, Int32 startat)
+   在 System.Text.RegularExpressions.Regex.Replace(String input, MatchEvaluator evaluator, Int32 count, Int32 startat)
+   在 System.Text.RegularExpressions.Regex.Replace(String input, MatchEvaluator evaluator)
+   在 X.Web.Com.XForm.loadcts(String body) 位置 D:\Pro\yt\city\src\X.Web\Com\XForm.cs:行号 55
+   在 X.Web.Com.XForm.form.init(String body) 位置 D:\Pro\yt\city\src\X.Web\Com\XForm.cs:行号 127
+   在 X.Web.Com.XForm.Parse(String html) 位置 D:\Pro\yt\city\src\X.Web\Com\XForm.cs:行号 71
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\yt\city\src\X.Web\Views\View.cs:行号 124
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\city\src\X.Web\XApp.cs:行号 31
+
+时间：2017-05-20 17:39:00,490 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(:0) - 
+错误：致命错误 
+时间：521488 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Com.XForm.pick.init(String body) 位置 D:\Pro\yt\city\src\X.Web\Com\XForm.cs:行号 294
+   在 X.Web.Com.XForm.<>c.<loadcts>b__4_0(Match o) 位置 D:\Pro\yt\city\src\X.Web\Com\XForm.cs:行号 58
+   在 System.Text.RegularExpressions.RegexReplacement.Replace(MatchEvaluator evaluator, Regex regex, String input, Int32 count, Int32 startat)
+   在 System.Text.RegularExpressions.Regex.Replace(String input, MatchEvaluator evaluator, Int32 count, Int32 startat)
+   在 System.Text.RegularExpressions.Regex.Replace(String input, MatchEvaluator evaluator)
+   在 X.Web.Com.XForm.loadcts(String body) 位置 D:\Pro\yt\city\src\X.Web\Com\XForm.cs:行号 55
+   在 X.Web.Com.XForm.form.init(String body) 位置 D:\Pro\yt\city\src\X.Web\Com\XForm.cs:行号 127
+   在 X.Web.Com.XForm.Parse(String html) 位置 D:\Pro\yt\city\src\X.Web\Com\XForm.cs:行号 71
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\yt\city\src\X.Web\Views\View.cs:行号 124
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\city\src\X.Web\XApp.cs:行号 31
+
+时间：2017-05-20 17:39:51,086 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(:0) - 
+错误：致命错误 
+时间：572084 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Com.XForm.pick.init(String body) 位置 D:\Pro\yt\city\src\X.Web\Com\XForm.cs:行号 294
+   在 X.Web.Com.XForm.<>c.<loadcts>b__4_0(Match o) 位置 D:\Pro\yt\city\src\X.Web\Com\XForm.cs:行号 58
+   在 System.Text.RegularExpressions.RegexReplacement.Replace(MatchEvaluator evaluator, Regex regex, String input, Int32 count, Int32 startat)
+   在 System.Text.RegularExpressions.Regex.Replace(String input, MatchEvaluator evaluator, Int32 count, Int32 startat)
+   在 System.Text.RegularExpressions.Regex.Replace(String input, MatchEvaluator evaluator)
+   在 X.Web.Com.XForm.loadcts(String body) 位置 D:\Pro\yt\city\src\X.Web\Com\XForm.cs:行号 55
+   在 X.Web.Com.XForm.form.init(String body) 位置 D:\Pro\yt\city\src\X.Web\Com\XForm.cs:行号 127
+   在 X.Web.Com.XForm.Parse(String html) 位置 D:\Pro\yt\city\src\X.Web\Com\XForm.cs:行号 71
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\yt\city\src\X.Web\Views\View.cs:行号 124
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\city\src\X.Web\XApp.cs:行号 31
+
+时间：2017-05-20 17:41:54,877 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(:0) - 
+错误：致命错误 
+时间：695875 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Com.XForm.pick.init(String body) 位置 D:\Pro\yt\city\src\X.Web\Com\XForm.cs:行号 294
+   在 X.Web.Com.XForm.<>c.<loadcts>b__4_0(Match o) 位置 D:\Pro\yt\city\src\X.Web\Com\XForm.cs:行号 58
+   在 System.Text.RegularExpressions.RegexReplacement.Replace(MatchEvaluator evaluator, Regex regex, String input, Int32 count, Int32 startat)
+   在 System.Text.RegularExpressions.Regex.Replace(String input, MatchEvaluator evaluator, Int32 count, Int32 startat)
+   在 System.Text.RegularExpressions.Regex.Replace(String input, MatchEvaluator evaluator)
+   在 X.Web.Com.XForm.loadcts(String body) 位置 D:\Pro\yt\city\src\X.Web\Com\XForm.cs:行号 55
+   在 X.Web.Com.XForm.form.init(String body) 位置 D:\Pro\yt\city\src\X.Web\Com\XForm.cs:行号 127
+   在 X.Web.Com.XForm.Parse(String html) 位置 D:\Pro\yt\city\src\X.Web\Com\XForm.cs:行号 71
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\yt\city\src\X.Web\Views\View.cs:行号 124
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\city\src\X.Web\XApp.cs:行号 31
+
+时间：2017-05-20 17:42:51,358 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(:0) - 
+错误：致命错误 
+时间：752356 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Com.XForm.pick.init(String body)
+   在 X.Web.Com.XForm.<>c.<loadcts>b__4_0(Match o)
+   在 System.Text.RegularExpressions.RegexReplacement.Replace(MatchEvaluator evaluator, Regex regex, String input, Int32 count, Int32 startat)
+   在 System.Text.RegularExpressions.Regex.Replace(String input, MatchEvaluator evaluator, Int32 count, Int32 startat)
+   在 System.Text.RegularExpressions.Regex.Replace(String input, MatchEvaluator evaluator)
+   在 X.Web.Com.XForm.loadcts(String body)
+   在 X.Web.Com.XForm.form.init(String body)
+   在 X.Web.Com.XForm.Parse(String html)
+   在 X.Web.Views.View.GetResponse()
+   在 X.Web.XApp.ProcessRequest(HttpContext c)
+
+时间：2017-05-20 17:42:58,801 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(:0) - 
+错误：致命错误 
+时间：759799 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Com.XForm.pick.init(String body)
+   在 X.Web.Com.XForm.<>c.<loadcts>b__4_0(Match o)
+   在 System.Text.RegularExpressions.RegexReplacement.Replace(MatchEvaluator evaluator, Regex regex, String input, Int32 count, Int32 startat)
+   在 System.Text.RegularExpressions.Regex.Replace(String input, MatchEvaluator evaluator, Int32 count, Int32 startat)
+   在 System.Text.RegularExpressions.Regex.Replace(String input, MatchEvaluator evaluator)
+   在 X.Web.Com.XForm.loadcts(String body)
+   在 X.Web.Com.XForm.form.init(String body)
+   在 X.Web.Com.XForm.Parse(String html)
+   在 X.Web.Views.View.GetResponse()
+   在 X.Web.XApp.ProcessRequest(HttpContext c)
+
+时间：2017-05-20 17:43:59,320 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(:0) - 
+错误：致命错误 
+时间：820318 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Com.XForm.pick.init(String body)
+   在 X.Web.Com.XForm.<>c.<loadcts>b__4_0(Match o)
+   在 System.Text.RegularExpressions.RegexReplacement.Replace(MatchEvaluator evaluator, Regex regex, String input, Int32 count, Int32 startat)
+   在 System.Text.RegularExpressions.Regex.Replace(String input, MatchEvaluator evaluator, Int32 count, Int32 startat)
+   在 System.Text.RegularExpressions.Regex.Replace(String input, MatchEvaluator evaluator)
+   在 X.Web.Com.XForm.loadcts(String body)
+   在 X.Web.Com.XForm.form.init(String body)
+   在 X.Web.Com.XForm.Parse(String html)
+   在 X.Web.Views.View.GetResponse()
+   在 X.Web.XApp.ProcessRequest(HttpContext c)
+
+时间：2017-05-20 17:45:40,046 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(:0) - 
+错误：致命错误 
+时间：921044 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Com.XForm.pick.init(String body)
+   在 X.Web.Com.XForm.<>c.<loadcts>b__4_0(Match o)
+   在 System.Text.RegularExpressions.RegexReplacement.Replace(MatchEvaluator evaluator, Regex regex, String input, Int32 count, Int32 startat)
+   在 System.Text.RegularExpressions.Regex.Replace(String input, MatchEvaluator evaluator, Int32 count, Int32 startat)
+   在 System.Text.RegularExpressions.Regex.Replace(String input, MatchEvaluator evaluator)
+   在 X.Web.Com.XForm.loadcts(String body)
+   在 X.Web.Com.XForm.form.init(String body)
+   在 X.Web.Com.XForm.Parse(String html)
+   在 X.Web.Views.View.GetResponse()
+   在 X.Web.XApp.ProcessRequest(HttpContext c)
+
+时间：2017-05-20 18:08:07,161 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(:0) - 
+错误：致命错误 
+时间：3731 
+System.ArgumentNullException: 值不能为 null。
+参数名: key
+   在 System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   在 System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector, IEqualityComparer`1 comparer)
+   在 System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector)
+   在 X.App.Views.xview.GetDictList(String cd, String up) 位置 D:\Pro\yt\city\src\Web\X.App\Views\xview.cs:行号 26
+   在 X.Web.Views.View.XForm_GetDictList(String cd, String up) 位置 D:\Pro\yt\city\src\X.Web\Views\View.cs:行号 144
+   在 X.Web.Com.XForm.getDictName(String cd, String val) 位置 D:\Pro\yt\city\src\X.Web\Com\XForm.cs:行号 65
+   在 X.Web.Com.XForm.pick.init(String body) 位置 D:\Pro\yt\city\src\X.Web\Com\XForm.cs:行号 302
+   在 X.Web.Com.XForm.<>c.<loadcts>b__6_0(Match o) 位置 D:\Pro\yt\city\src\X.Web\Com\XForm.cs:行号 58
+   在 System.Text.RegularExpressions.RegexReplacement.Replace(MatchEvaluator evaluator, Regex regex, String input, Int32 count, Int32 startat)
+   在 System.Text.RegularExpressions.Regex.Replace(String input, MatchEvaluator evaluator, Int32 count, Int32 startat)
+   在 System.Text.RegularExpressions.Regex.Replace(String input, MatchEvaluator evaluator)
+   在 X.Web.Com.XForm.loadcts(String body) 位置 D:\Pro\yt\city\src\X.Web\Com\XForm.cs:行号 55
+   在 X.Web.Com.XForm.form.init(String body) 位置 D:\Pro\yt\city\src\X.Web\Com\XForm.cs:行号 135
+   在 X.Web.Com.XForm.Parse(String html) 位置 D:\Pro\yt\city\src\X.Web\Com\XForm.cs:行号 79
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\yt\city\src\X.Web\Views\View.cs:行号 119
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\city\src\X.Web\XApp.cs:行号 31
+
+时间：2017-05-20 18:08:21,254 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(:0) - 
+错误：致命错误 
+时间：5709 
+System.ArgumentNullException: 值不能为 null。
+参数名: key
+   在 System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   在 System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector, IEqualityComparer`1 comparer)
+   在 System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector)
+   在 X.App.Views.xview.GetDictList(String cd, String up) 位置 D:\Pro\yt\city\src\Web\X.App\Views\xview.cs:行号 26
+   在 X.Web.Views.View.XForm_GetDictList(String cd, String up) 位置 D:\Pro\yt\city\src\X.Web\Views\View.cs:行号 144
+   在 X.Web.Com.XForm.getDictName(String cd, String val) 位置 D:\Pro\yt\city\src\X.Web\Com\XForm.cs:行号 65
+   在 X.Web.Com.XForm.pick.init(String body) 位置 D:\Pro\yt\city\src\X.Web\Com\XForm.cs:行号 302
+   在 X.Web.Com.XForm.<>c.<loadcts>b__6_0(Match o) 位置 D:\Pro\yt\city\src\X.Web\Com\XForm.cs:行号 58
+   在 System.Text.RegularExpressions.RegexReplacement.Replace(MatchEvaluator evaluator, Regex regex, String input, Int32 count, Int32 startat)
+   在 System.Text.RegularExpressions.Regex.Replace(String input, MatchEvaluator evaluator, Int32 count, Int32 startat)
+   在 System.Text.RegularExpressions.Regex.Replace(String input, MatchEvaluator evaluator)
+   在 X.Web.Com.XForm.loadcts(String body) 位置 D:\Pro\yt\city\src\X.Web\Com\XForm.cs:行号 55
+   在 X.Web.Com.XForm.form.init(String body) 位置 D:\Pro\yt\city\src\X.Web\Com\XForm.cs:行号 135
+   在 X.Web.Com.XForm.Parse(String html) 位置 D:\Pro\yt\city\src\X.Web\Com\XForm.cs:行号 79
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\yt\city\src\X.Web\Views\View.cs:行号 119
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\city\src\X.Web\XApp.cs:行号 31

@@ -1,0 +1,549 @@
+
+时间：2017-05-21 07:26:15,876 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"接口不存在 mgr.chapter.del","code":"0x0002"} 
+时间：1071271 
+
+时间：2017-05-21 07:51:32,476 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"接口不存在 com.upload","code":"0x0002"} 
+时间：1190555 
+
+时间：2017-05-21 08:30:34,344 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(:0) - 
+错误：致命错误 
+时间：179415 
+System.Data.SqlClient.SqlException (0x80131904): INSERT 语句与 FOREIGN KEY 约束"FK_X_POI_REFERENCE_X_GRID"冲突。该冲突发生于数据库"yt.city"，表"dbo.x_grid", column 'grid_id'。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.ExecuteReader()
+   在 System.Data.Linq.SqlClient.SqlProvider.Execute(Expression query, QueryInfo queryInfo, IObjectReaderFactory factory, Object[] parentArgs, Object[] userArgs, ICompiledSubQuery[] subQueries, Object lastResult)
+   在 System.Data.Linq.SqlClient.SqlProvider.ExecuteAll(Expression query, QueryInfo[] queryInfos, IObjectReaderFactory factory, Object[] userArguments, ICompiledSubQuery[] subQueries)
+   在 System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   在 System.Data.Linq.ChangeDirector.StandardChangeDirector.DynamicInsert(TrackedObject item)
+   在 System.Data.Linq.ChangeDirector.StandardChangeDirector.Insert(TrackedObject item)
+   在 System.Data.Linq.ChangeProcessor.SubmitChanges(ConflictMode failureMode)
+   在 System.Data.Linq.DataContext.SubmitChanges(ConflictMode failureMode)
+   在 X.App.DBDataContext.SubmitDBChanges() 位置 D:\Pro\yt\city\src\Web\X.App\Com\DB.cs:行号 115
+   在 X.App.Apis.poi.save.Execute() 位置 D:\Pro\yt\city\src\Web\X.App\Apis\poi\save.cs:行号 44
+   在 X.Web.Apis.Api.GetResponse() 位置 D:\Pro\yt\city\src\X.Web\Apis\Api.cs:行号 30
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\city\src\X.Web\XApp.cs:行号 31
+ClientConnectionId:2306b34a-23d5-477b-9bd7-234dbc917a8f
+Error Number:547,State:0,Class:16
+
+时间：2017-05-21 09:58:44,986 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(:0) - 
+错误：致命错误 
+时间：148827 
+System.Data.SqlClient.SqlException (0x80131904): INSERT 语句与 FOREIGN KEY 约束"FK_X_POI_REFERENCE_X_GRID"冲突。该冲突发生于数据库"yt.city"，表"dbo.x_grid", column 'grid_id'。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.ExecuteReader()
+   在 System.Data.Linq.SqlClient.SqlProvider.Execute(Expression query, QueryInfo queryInfo, IObjectReaderFactory factory, Object[] parentArgs, Object[] userArgs, ICompiledSubQuery[] subQueries, Object lastResult)
+   在 System.Data.Linq.SqlClient.SqlProvider.ExecuteAll(Expression query, QueryInfo[] queryInfos, IObjectReaderFactory factory, Object[] userArguments, ICompiledSubQuery[] subQueries)
+   在 System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   在 System.Data.Linq.ChangeDirector.StandardChangeDirector.DynamicInsert(TrackedObject item)
+   在 System.Data.Linq.ChangeDirector.StandardChangeDirector.Insert(TrackedObject item)
+   在 System.Data.Linq.ChangeProcessor.SubmitChanges(ConflictMode failureMode)
+   在 System.Data.Linq.DataContext.SubmitChanges(ConflictMode failureMode)
+   在 X.App.DBDataContext.SubmitDBChanges() 位置 D:\Pro\yt\city\src\Web\X.App\Com\DB.cs:行号 115
+   在 X.App.Apis.poi.save.Execute() 位置 D:\Pro\yt\city\src\Web\X.App\Apis\poi\save.cs:行号 44
+   在 X.Web.Apis.Api.GetResponse() 位置 D:\Pro\yt\city\src\X.Web\Apis\Api.cs:行号 30
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\city\src\X.Web\XApp.cs:行号 31
+ClientConnectionId:4bd76b55-839b-4918-a1c8-5d9cabedb0c6
+Error Number:547,State:0,Class:16
+
+时间：2017-05-21 09:59:03,609 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(:0) - 
+错误：致命错误 
+时间：167450 
+System.Data.SqlClient.SqlException (0x80131904): INSERT 语句与 FOREIGN KEY 约束"FK_X_POI_REFERENCE_X_GRID"冲突。该冲突发生于数据库"yt.city"，表"dbo.x_grid", column 'grid_id'。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.ExecuteReader()
+   在 System.Data.Linq.SqlClient.SqlProvider.Execute(Expression query, QueryInfo queryInfo, IObjectReaderFactory factory, Object[] parentArgs, Object[] userArgs, ICompiledSubQuery[] subQueries, Object lastResult)
+   在 System.Data.Linq.SqlClient.SqlProvider.ExecuteAll(Expression query, QueryInfo[] queryInfos, IObjectReaderFactory factory, Object[] userArguments, ICompiledSubQuery[] subQueries)
+   在 System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   在 System.Data.Linq.ChangeDirector.StandardChangeDirector.DynamicInsert(TrackedObject item)
+   在 System.Data.Linq.ChangeDirector.StandardChangeDirector.Insert(TrackedObject item)
+   在 System.Data.Linq.ChangeProcessor.SubmitChanges(ConflictMode failureMode)
+   在 System.Data.Linq.DataContext.SubmitChanges(ConflictMode failureMode)
+   在 X.App.DBDataContext.SubmitDBChanges() 位置 D:\Pro\yt\city\src\Web\X.App\Com\DB.cs:行号 115
+   在 X.App.Apis.poi.save.Execute() 位置 D:\Pro\yt\city\src\Web\X.App\Apis\poi\save.cs:行号 44
+   在 X.Web.Apis.Api.GetResponse() 位置 D:\Pro\yt\city\src\X.Web\Apis\Api.cs:行号 30
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\city\src\X.Web\XApp.cs:行号 31
+ClientConnectionId:4bd76b55-839b-4918-a1c8-5d9cabedb0c6
+Error Number:547,State:0,Class:16
+
+时间：2017-05-21 20:12:40,398 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(:0) - 
+错误：致命错误 
+时间：70673 
+System.Data.SqlClient.SqlException (0x80131904): 列名 'radius' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.ExecuteReader()
+   在 System.Data.Linq.SqlClient.SqlProvider.Execute(Expression query, QueryInfo queryInfo, IObjectReaderFactory factory, Object[] parentArgs, Object[] userArgs, ICompiledSubQuery[] subQueries, Object lastResult)
+   在 System.Data.Linq.SqlClient.SqlProvider.ExecuteAll(Expression query, QueryInfo[] queryInfos, IObjectReaderFactory factory, Object[] userArguments, ICompiledSubQuery[] subQueries)
+   在 System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   在 System.Data.Linq.ChangeDirector.StandardChangeDirector.DynamicInsert(TrackedObject item)
+   在 System.Data.Linq.ChangeDirector.StandardChangeDirector.Insert(TrackedObject item)
+   在 System.Data.Linq.ChangeProcessor.SubmitChanges(ConflictMode failureMode)
+   在 System.Data.Linq.DataContext.SubmitChanges(ConflictMode failureMode)
+   在 X.App.DBDataContext.SubmitDBChanges() 位置 D:\Pro\yt\city\src\Web\X.App\Com\DB.cs:行号 115
+   在 X.App.Apis.grid.save.Execute() 位置 D:\Pro\yt\city\src\Web\X.App\Apis\grid\save.cs:行号 39
+   在 X.Web.Apis.Api.GetResponse() 位置 D:\Pro\yt\city\src\X.Web\Apis\Api.cs:行号 30
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\city\src\X.Web\XApp.cs:行号 31
+ClientConnectionId:b627a0d0-e2c1-4543-812c-f67c68c62f7a
+Error Number:207,State:1,Class:16
+
+时间：2017-05-21 21:42:53,145 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：值不能为 null。
+参数名: source
+   在 System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+   在 X.App.Views.xview.GetDictList(String cd, String up) 位置 D:\Pro\yt\city\src\Web\X.App\Views\xview.cs:行号 25
+   在 X.App.Views.poi.edit.InitDict() 位置 D:\Pro\yt\city\src\Web\X.App\Views\poi\edit.cs:行号 29
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\yt\city\src\X.Web\Views\View.cs:行号 102 
+时间：100 
+
+时间：2017-05-21 21:42:53,180 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(:0) - 
+错误：致命错误 
+时间：136 
+System.ArgumentNullException: 值不能为 null。
+参数名: source
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\yt\city\src\X.Web\Views\View.cs:行号 112
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\city\src\X.Web\XApp.cs:行号 31
+
+时间：2017-05-21 21:44:12,988 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：值不能为 null。
+参数名: source
+   在 System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+   在 X.App.Views.xview.GetDictList(String cd, String up) 位置 D:\Pro\yt\city\src\Web\X.App\Views\xview.cs:行号 25
+   在 X.App.Views.poi.edit.InitDict() 位置 D:\Pro\yt\city\src\Web\X.App\Views\poi\edit.cs:行号 29
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\yt\city\src\X.Web\Views\View.cs:行号 102 
+时间：79944 
+
+时间：2017-05-21 21:44:12,989 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(:0) - 
+错误：致命错误 
+时间：79944 
+System.ArgumentNullException: 值不能为 null。
+参数名: source
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\yt\city\src\X.Web\Views\View.cs:行号 112
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\city\src\X.Web\XApp.cs:行号 31
+
+时间：2017-05-21 21:44:27,953 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：值不能为 null。
+参数名: source
+   在 System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+   在 X.App.Views.xview.GetDictList(String cd, String up) 位置 D:\Pro\yt\city\src\Web\X.App\Views\xview.cs:行号 25
+   在 X.App.Views.poi.edit.InitDict() 位置 D:\Pro\yt\city\src\Web\X.App\Views\poi\edit.cs:行号 29
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\yt\city\src\X.Web\Views\View.cs:行号 102 
+时间：94909 
+
+时间：2017-05-21 21:44:27,953 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(:0) - 
+错误：致命错误 
+时间：94909 
+System.ArgumentNullException: 值不能为 null。
+参数名: source
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\yt\city\src\X.Web\Views\View.cs:行号 112
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\city\src\X.Web\XApp.cs:行号 31
+
+时间：2017-05-21 21:44:39,034 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：值不能为 null。
+参数名: source
+   在 System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+   在 X.App.Views.xview.GetDictList(String cd, String up) 位置 D:\Pro\yt\city\src\Web\X.App\Views\xview.cs:行号 25
+   在 X.App.Views.poi.edit.InitDict() 位置 D:\Pro\yt\city\src\Web\X.App\Views\poi\edit.cs:行号 29
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\yt\city\src\X.Web\Views\View.cs:行号 102 
+时间：105989 
+
+时间：2017-05-21 21:44:39,034 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(:0) - 
+错误：致命错误 
+时间：105990 
+System.ArgumentNullException: 值不能为 null。
+参数名: source
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\yt\city\src\X.Web\Views\View.cs:行号 112
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\city\src\X.Web\XApp.cs:行号 31
+
+时间：2017-05-21 21:45:32,534 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：值不能为 null。
+参数名: source
+   在 System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+   在 X.App.Views.xview.GetDictList(String cd, String up) 位置 D:\Pro\yt\city\src\Web\X.App\Views\xview.cs:行号 25
+   在 X.App.Views.poi.edit.InitDict() 位置 D:\Pro\yt\city\src\Web\X.App\Views\poi\edit.cs:行号 29
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\yt\city\src\X.Web\Views\View.cs:行号 102 
+时间：30204 
+
+时间：2017-05-21 21:45:32,578 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(:0) - 
+错误：致命错误 
+时间：30249 
+System.ArgumentNullException: 值不能为 null。
+参数名: source
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\yt\city\src\X.Web\Views\View.cs:行号 112
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\city\src\X.Web\XApp.cs:行号 31
+
+时间：2017-05-21 21:48:07,505 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：已添加了具有相同键的项。
+   在 System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   在 System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   在 System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector, IEqualityComparer`1 comparer)
+   在 System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector)
+   在 X.App.Views.xview.GetDictList(String cd, String up) 位置 D:\Pro\yt\city\src\Web\X.App\Views\xview.cs:行号 26
+   在 X.App.Views.poi.edit.InitDict() 位置 D:\Pro\yt\city\src\Web\X.App\Views\poi\edit.cs:行号 29
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\yt\city\src\X.Web\Views\View.cs:行号 102 
+时间：100 
+
+时间：2017-05-21 21:48:07,540 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(:0) - 
+错误：致命错误 
+时间：135 
+System.ArgumentException: 已添加了具有相同键的项。
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\yt\city\src\X.Web\Views\View.cs:行号 112
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\city\src\X.Web\XApp.cs:行号 31
+
+时间：2017-05-21 21:53:21,536 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(:0) - 
+错误：致命错误 
+时间：188 
+System.Data.SqlClient.SqlException (0x80131904): INSERT 语句与 FOREIGN KEY 约束"FK_X_POI_REFERENCE_X_GRID"冲突。该冲突发生于数据库"yt.city"，表"dbo.x_grid", column 'grid_id'。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.ExecuteReader()
+   在 System.Data.Linq.SqlClient.SqlProvider.Execute(Expression query, QueryInfo queryInfo, IObjectReaderFactory factory, Object[] parentArgs, Object[] userArgs, ICompiledSubQuery[] subQueries, Object lastResult)
+   在 System.Data.Linq.SqlClient.SqlProvider.ExecuteAll(Expression query, QueryInfo[] queryInfos, IObjectReaderFactory factory, Object[] userArguments, ICompiledSubQuery[] subQueries)
+   在 System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   在 System.Data.Linq.ChangeDirector.StandardChangeDirector.DynamicInsert(TrackedObject item)
+   在 System.Data.Linq.ChangeDirector.StandardChangeDirector.Insert(TrackedObject item)
+   在 System.Data.Linq.ChangeProcessor.SubmitChanges(ConflictMode failureMode)
+   在 System.Data.Linq.DataContext.SubmitChanges(ConflictMode failureMode)
+   在 X.App.DBDataContext.SubmitDBChanges() 位置 D:\Pro\yt\city\src\Web\X.App\Com\DB.cs:行号 115
+   在 X.App.Apis.poi.save.Execute() 位置 D:\Pro\yt\city\src\Web\X.App\Apis\poi\save.cs:行号 44
+   在 X.Web.Apis.Api.GetResponse() 位置 D:\Pro\yt\city\src\X.Web\Apis\Api.cs:行号 30
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\city\src\X.Web\XApp.cs:行号 31
+ClientConnectionId:9ea07c5d-62dc-4248-9b65-12f3f5ad8294
+Error Number:547,State:0,Class:16
+
+时间：2017-05-21 23:11:50,010 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(:0) - 
+错误：致命错误 
+时间：14980 
+System.Data.SqlClient.SqlException (0x80131904): 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: TCP Provider, error: 0 - 远程计算机拒绝网络连接。) ---> System.ComponentModel.Win32Exception (0x80004005): 远程计算机拒绝网络连接。
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 System.Data.Linq.SqlClient.SqlConnectionManager.UseConnection(IConnectionUser user)
+   在 System.Data.Linq.SqlClient.SqlProvider.get_IsSqlCe()
+   在 System.Data.Linq.SqlClient.SqlProvider.InitializeProviderMode()
+   在 System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   在 System.Data.Linq.DataQuery`1.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   在 System.Linq.Queryable.Count[TSource](IQueryable`1 source)
+   在 X.App.Apis.poi.list.Execute() 位置 D:\Pro\yt\city\src\Web\X.App\Apis\poi\list.cs:行号 24
+   在 X.Web.Apis.Api.GetResponse() 位置 D:\Pro\yt\city\src\X.Web\Apis\Api.cs:行号 30
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\city\src\X.Web\XApp.cs:行号 31
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:1225,State:0,Class:20
+
+时间：2017-05-21 23:12:25,965 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：Invocation of method 'getCates' in  X.App.Views.index threw exception System.ComponentModel.Win32Exception : 远程计算机拒绝网络连接。
+   在 NVelocity.Runtime.Parser.Node.ASTMethod.Execute(Object o, IInternalContextAdapter context)
+   在 NVelocity.Runtime.Parser.Node.ASTReference.Execute(Object o, IInternalContextAdapter context)
+   在 NVelocity.Runtime.Parser.Node.ASTReference.Value(IInternalContextAdapter context)
+   在 NVelocity.Runtime.Parser.Node.ASTSetDirective.Render(IInternalContextAdapter context, TextWriter writer)
+   在 NVelocity.Runtime.Parser.Node.SimpleNode.Render(IInternalContextAdapter context, TextWriter writer)
+   在 NVelocity.Template.Merge(IContext context, TextWriter writer)
+   在 X.Web.Com.Tpl.Merge(String templatePath, IDictionary`2 dict) 位置 D:\Pro\yt\city\src\X.Web\Com\Tpl.cs:行号 98
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\yt\city\src\X.Web\Views\View.cs:行号 103 
+时间：14943 
+
+时间：2017-05-21 23:12:25,972 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(:0) - 
+错误：致命错误 
+时间：14950 
+System.Data.SqlClient.SqlException (0x80131904): 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: TCP Provider, error: 0 - 远程计算机拒绝网络连接。) ---> System.ComponentModel.Win32Exception (0x80004005): 远程计算机拒绝网络连接。
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 System.Data.Linq.SqlClient.SqlConnectionManager.UseConnection(IConnectionUser user)
+   在 System.Data.Linq.SqlClient.SqlProvider.get_IsSqlCe()
+   在 System.Data.Linq.SqlClient.SqlProvider.InitializeProviderMode()
+   在 System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   在 System.Data.Linq.DataQuery`1.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   在 System.Linq.Queryable.Count[TSource](IQueryable`1 source)
+   在 X.App.Apis.poi.list.Execute() 位置 D:\Pro\yt\city\src\Web\X.App\Apis\poi\list.cs:行号 25
+   在 X.Web.Apis.Api.GetResponse() 位置 D:\Pro\yt\city\src\X.Web\Apis\Api.cs:行号 30
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\city\src\X.Web\XApp.cs:行号 31
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:1225,State:0,Class:20
+
+时间：2017-05-21 23:12:25,982 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(:0) - 
+错误：致命错误 
+时间：14960 
+NVelocity.Exception.MethodInvocationException: Invocation of method 'getCates' in  X.App.Views.index threw exception System.ComponentModel.Win32Exception : 远程计算机拒绝网络连接。 ---> System.ComponentModel.Win32Exception: 远程计算机拒绝网络连接。
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\yt\city\src\X.Web\Views\View.cs:行号 112
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\city\src\X.Web\XApp.cs:行号 31
+
+时间：2017-05-21 23:12:29,254 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：Invocation of method 'getCates' in  X.App.Views.index threw exception System.ComponentModel.Win32Exception : 远程计算机拒绝网络连接。
+   在 NVelocity.Runtime.Parser.Node.ASTMethod.Execute(Object o, IInternalContextAdapter context)
+   在 NVelocity.Runtime.Parser.Node.ASTReference.Execute(Object o, IInternalContextAdapter context)
+   在 NVelocity.Runtime.Parser.Node.ASTReference.Value(IInternalContextAdapter context)
+   在 NVelocity.Runtime.Parser.Node.ASTSetDirective.Render(IInternalContextAdapter context, TextWriter writer)
+   在 NVelocity.Runtime.Parser.Node.SimpleNode.Render(IInternalContextAdapter context, TextWriter writer)
+   在 NVelocity.Template.Merge(IContext context, TextWriter writer)
+   在 X.Web.Com.Tpl.Merge(String templatePath, IDictionary`2 dict) 位置 D:\Pro\yt\city\src\X.Web\Com\Tpl.cs:行号 98
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\yt\city\src\X.Web\Views\View.cs:行号 103 
+时间：18232 
+
+时间：2017-05-21 23:12:29,254 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(:0) - 
+错误：致命错误 
+时间：18232 
+NVelocity.Exception.MethodInvocationException: Invocation of method 'getCates' in  X.App.Views.index threw exception System.ComponentModel.Win32Exception : 远程计算机拒绝网络连接。 ---> System.ComponentModel.Win32Exception: 远程计算机拒绝网络连接。
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\yt\city\src\X.Web\Views\View.cs:行号 112
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\city\src\X.Web\XApp.cs:行号 31
+
+时间：2017-05-21 23:12:50,970 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：Invocation of method 'getCates' in  X.App.Views.index threw exception System.ComponentModel.Win32Exception : 远程计算机拒绝网络连接。
+   在 NVelocity.Runtime.Parser.Node.ASTMethod.Execute(Object o, IInternalContextAdapter context)
+   在 NVelocity.Runtime.Parser.Node.ASTReference.Execute(Object o, IInternalContextAdapter context)
+   在 NVelocity.Runtime.Parser.Node.ASTReference.Value(IInternalContextAdapter context)
+   在 NVelocity.Runtime.Parser.Node.ASTSetDirective.Render(IInternalContextAdapter context, TextWriter writer)
+   在 NVelocity.Runtime.Parser.Node.SimpleNode.Render(IInternalContextAdapter context, TextWriter writer)
+   在 NVelocity.Template.Merge(IContext context, TextWriter writer)
+   在 X.Web.Com.Tpl.Merge(String templatePath, IDictionary`2 dict) 位置 D:\Pro\yt\city\src\X.Web\Com\Tpl.cs:行号 98
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\yt\city\src\X.Web\Views\View.cs:行号 103 
+时间：39948 
+
+时间：2017-05-21 23:12:50,970 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(:0) - 
+错误：致命错误 
+时间：39948 
+NVelocity.Exception.MethodInvocationException: Invocation of method 'getCates' in  X.App.Views.index threw exception System.ComponentModel.Win32Exception : 远程计算机拒绝网络连接。 ---> System.ComponentModel.Win32Exception: 远程计算机拒绝网络连接。
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\yt\city\src\X.Web\Views\View.cs:行号 112
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\city\src\X.Web\XApp.cs:行号 31
+
+时间：2017-05-21 23:14:35,976 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：Invocation of method 'getCates' in  X.App.Views.index threw exception System.ComponentModel.Win32Exception : 远程计算机拒绝网络连接。
+   在 NVelocity.Runtime.Parser.Node.ASTMethod.Execute(Object o, IInternalContextAdapter context)
+   在 NVelocity.Runtime.Parser.Node.ASTReference.Execute(Object o, IInternalContextAdapter context)
+   在 NVelocity.Runtime.Parser.Node.ASTReference.Value(IInternalContextAdapter context)
+   在 NVelocity.Runtime.Parser.Node.ASTSetDirective.Render(IInternalContextAdapter context, TextWriter writer)
+   在 NVelocity.Runtime.Parser.Node.SimpleNode.Render(IInternalContextAdapter context, TextWriter writer)
+   在 NVelocity.Template.Merge(IContext context, TextWriter writer)
+   在 X.Web.Com.Tpl.Merge(String templatePath, IDictionary`2 dict) 位置 D:\Pro\yt\city\src\X.Web\Com\Tpl.cs:行号 98
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\yt\city\src\X.Web\Views\View.cs:行号 103 
+时间：97945 
+
+时间：2017-05-21 23:14:36,028 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(:0) - 
+错误：致命错误 
+时间：97998 
+NVelocity.Exception.MethodInvocationException: Invocation of method 'getCates' in  X.App.Views.index threw exception System.ComponentModel.Win32Exception : 远程计算机拒绝网络连接。 ---> System.ComponentModel.Win32Exception: 远程计算机拒绝网络连接。
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\yt\city\src\X.Web\Views\View.cs:行号 112
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\city\src\X.Web\XApp.cs:行号 31
+
+时间：2017-05-21 23:23:46,043 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.poi.edit.InitDict() 位置 D:\Pro\yt\city\src\Web\X.App\Views\poi\edit.cs:行号 25
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\yt\city\src\X.Web\Views\View.cs:行号 102 
+时间：485288 
+
+时间：2017-05-21 23:23:46,060 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":" ","code":"0x0005"} 
+时间：485305 
+
+时间：2017-05-21 23:24:08,093 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：引发类型为“X.Web.XExcep”的异常。
+   在 X.App.Views.poi.edit.InitDict() 位置 D:\Pro\yt\city\src\Web\X.App\Views\poi\edit.cs:行号 25
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\yt\city\src\X.Web\Views\View.cs:行号 102 
+时间：507338 
+
+时间：2017-05-21 23:24:08,093 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":" ","code":"0x0005"} 
+时间：507338 
+
+时间：2017-05-21 23:24:36,863 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：已添加了具有相同键的项。
+   在 System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   在 System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   在 System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   在 X.App.Views.poi.edit.InitDict() 位置 D:\Pro\yt\city\src\Web\X.App\Views\poi\edit.cs:行号 32
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\yt\city\src\X.Web\Views\View.cs:行号 102 
+时间：3024 
+
+时间：2017-05-21 23:24:36,882 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(:0) - 
+错误：致命错误 
+时间：3043 
+System.ArgumentException: 已添加了具有相同键的项。
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\yt\city\src\X.Web\Views\View.cs:行号 112
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\city\src\X.Web\XApp.cs:行号 31

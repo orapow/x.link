@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+您 Web 项目的发布/打包进程将使用此文件。您可以通过编辑此 MSBuild 文件
+来自定义该进程的行为。若要了解与此相关的详细信息，请访问 http://go.microsoft.com/fwlink/?LinkID=208121。
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\Pub\yt\city</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="App.ashx">
+      <publishTime>05/10/2017 15:51:33</publishTime>
+    </File>
+    <File Include="bin/Enyim.Caching.dll">
+      <publishTime>05/01/2015 13:58:27</publishTime>
+    </File>
+    <File Include="bin/log4net.dll">
+      <publishTime>07/28/2014 06:35:54</publishTime>
+    </File>
+    <File Include="bin/NVelocity.dll">
+      <publishTime>05/02/2017 06:59:07</publishTime>
+    </File>
+    <File Include="bin/X.App.dll">
+      <publishTime>05/21/2017 23:26:07</publishTime>
+    </File>
+    <File Include="bin/X.Core.dll">
+      <publishTime>05/21/2017 23:03:22</publishTime>
+    </File>
+    <File Include="bin/X.Json.dll">
+      <publishTime>04/30/2015 00:06:13</publishTime>
+    </File>
+    <File Include="bin/X.Ui.dll">
+      <publishTime>05/21/2017 23:26:07</publishTime>
+    </File>
+    <File Include="bin/X.Web.dll">
+      <publishTime>05/21/2017 23:01:14</publishTime>
+    </File>
+    <File Include="dat/cfg.x">
+      <publishTime>05/21/2017 07:52:45</publishTime>
+    </File>
+    <File Include="dat/codes.x">
+      <publishTime>05/19/2017 22:32:55</publishTime>
+    </File>
+    <File Include="dat/urls.x">
+      <publishTime>05/10/2017 15:51:33</publishTime>
+    </File>
+    <File Include="global.asax">
+      <publishTime>05/10/2017 15:51:33</publishTime>
+    </File>
+    <File Include="res/css/x.dialog.css">
+      <publishTime>05/10/2017 15:51:33</publishTime>
+    </File>
+    <File Include="res/css/x.form.css">
+      <publishTime>05/19/2017 22:32:55</publishTime>
+    </File>
+    <File Include="res/css/x.grid.css">
+      <publishTime>05/10/2017 15:51:33</publishTime>
+    </File>
+    <File Include="res/css/x.page.css">
+      <publishTime>05/20/2017 16:32:49</publishTime>
+    </File>
+    <File Include="res/img/dialog.bg.png">
+      <publishTime>05/10/2017 15:51:33</publishTime>
+    </File>
+    <File Include="res/img/files/avi.png">
+      <publishTime>05/10/2017 15:51:33</publishTime>
+    </File>
+    <File Include="res/img/files/bmp.png">
+      <publishTime>05/10/2017 15:51:33</publishTime>
+    </File>
+    <File Include="res/img/files/css.png">
+      <publishTime>05/10/2017 15:51:33</publishTime>
+    </File>
+    <File Include="res/img/files/doc.png">
+      <publishTime>05/10/2017 15:51:33</publishTime>
+    </File>
+    <File Include="res/img/files/docx.png">
+      <publishTime>05/10/2017 15:51:33</publishTime>
+    </File>
+    <File Include="res/img/files/flv.png">
+      <publishTime>05/10/2017 15:51:33</publishTime>
+    </File>
+    <File Include="res/img/files/html.png">
+      <publishTime>05/10/2017 15:51:33</publishTime>
+    </File>
+    <File Include="res/img/files/jpg.png">
+      <publishTime>05/10/2017 15:51:33</publishTime>
+    </File>
+    <File Include="res/img/files/js.png">
+      <publishTime>05/10/2017 15:51:33</publishTime>
+    </File>
+    <File Include="res/img/files/mov.png">
+      <publishTime>05/10/2017 15:51:33</publishTime>
+    </File>
+    <File Include="res/img/files/mp3.png">
+      <publishTime>05/10/2017 15:51:33</publishTime>
+    </File>
+    <File Include="res/img/files/mp4.png">
+      <publishTime>05/10/2017 15:51:34</publishTime>
+    </File>
+    <File Include="res/img/files/pdf.png">
+      <publishTime>05/10/2017 15:51:34</publishTime>
+    </File>
+    <File Include="res/img/files/png.png">
+      <publishTime>05/10/2017 15:51:34</publishTime>
+    </File>
+    <File Include="res/img/files/ppt.png">
+      <publishTime>05/10/2017 15:51:34</publishTime>
+    </File>
+    <File Include="res/img/files/pptx.png">
+      <publishTime>05/10/2017 15:51:34</publishTime>
+    </File>
+    <File Include="res/img/files/rar.png">
+      <publishTime>05/10/2017 15:51:34</publishTime>
+    </File>
+    <File Include="res/img/files/swf.png">
+      <publishTime>05/10/2017 15:51:34</publishTime>
+    </File>
+    <File Include="res/img/files/ttf.png">
+      <publishTime>05/10/2017 15:51:34</publishTime>
+    </File>
+    <File Include="res/img/files/wav.png">
+      <publishTime>05/10/2017 15:51:34</publishTime>
+    </File>
+    <File Include="res/img/files/wmv.png">
+      <publishTime>05/10/2017 15:51:34</publishTime>
+    </File>
+    <File Include="res/img/files/xls.png">
+      <publishTime>05/10/2017 15:51:34</publishTime>
+    </File>
+    <File Include="res/img/files/xlsx.png">
+      <publishTime>05/10/2017 15:51:34</publishTime>
+    </File>
+    <File Include="res/img/files/xml.png">
+      <publishTime>05/10/2017 15:51:34</publishTime>
+    </File>
+    <File Include="res/img/files/zip.png">
+      <publishTime>05/10/2017 15:51:34</publishTime>
+    </File>
+    <File Include="res/img/loading.gif">
+      <publishTime>05/10/2017 15:51:34</publishTime>
+    </File>
+    <File Include="res/img/logo.png">
+      <publishTime>05/20/2017 15:17:00</publishTime>
+    </File>
+    <File Include="res/img/tip.jpg">
+      <publishTime>05/10/2017 15:51:34</publishTime>
+    </File>
+    <File Include="res/js/highcharts.js">
+      <publishTime>05/10/2017 15:51:34</publishTime>
+    </File>
+    <File Include="res/js/jq_1.10.1.js">
+      <publishTime>05/10/2017 15:51:34</publishTime>
+    </File>
+    <File Include="res/js/jq_2.1.4.js">
+      <publishTime>05/10/2017 15:51:34</publishTime>
+    </File>
+    <File Include="res/js/x.form.js">
+      <publishTime>05/21/2017 22:21:30</publishTime>
+    </File>
+    <File Include="res/js/x.grid.js">
+      <publishTime>05/10/2017 15:51:34</publishTime>
+    </File>
+    <File Include="res/js/x.js">
+      <publishTime>05/10/2017 15:51:34</publishTime>
+    </File>
+    <File Include="res/plug/bs/bootstrap.zip">
+      <publishTime>05/10/2017 15:51:34</publishTime>
+    </File>
+    <File Include="res/plug/bs/v2.3.2.css">
+      <publishTime>05/10/2017 15:51:34</publishTime>
+    </File>
+    <File Include="res/plug/bs/v2.3.2.js">
+      <publishTime>05/10/2017 15:51:34</publishTime>
+    </File>
+    <File Include="res/plug/bs/v3.3.5.css">
+      <publishTime>05/10/2017 15:51:34</publishTime>
+    </File>
+    <File Include="res/plug/code/code.js">
+      <publishTime>05/10/2017 15:51:34</publishTime>
+    </File>
+    <File Include="res/plug/code/prism.css">
+      <publishTime>05/10/2017 15:51:34</publishTime>
+    </File>
+    <File Include="res/plug/code/prism.js">
+      <publishTime>05/10/2017 15:51:34</publishTime>
+    </File>
+    <File Include="res/plug/code/vs.css">
+      <publishTime>05/10/2017 15:51:34</publishTime>
+    </File>
+    <File Include="res/plug/dp/v2.1.css">
+      <publishTime>05/10/2017 15:51:34</publishTime>
+    </File>
+    <File Include="res/plug/dp/v2.1.js">
+      <publishTime>05/10/2017 15:51:34</publishTime>
+    </File>
+    <File Include="res/plug/hchart/hcharts.js">
+      <publishTime>05/10/2017 15:51:34</publishTime>
+    </File>
+    <File Include="res/plug/icon/font/FontAwesome.otf">
+      <publishTime>05/10/2017 15:51:34</publishTime>
+    </File>
+    <File Include="res/plug/icon/font/icon.eot">
+      <publishTime>05/10/2017 15:51:34</publishTime>
+    </File>
+    <File Include="res/plug/icon/font/icon.svg">
+      <publishTime>05/10/2017 15:51:34</publishTime>
+    </File>
+    <File Include="res/plug/icon/font/icon.ttf">
+      <publishTime>05/10/2017 15:51:34</publishTime>
+    </File>
+    <File Include="res/plug/icon/font/icon.woff">
+      <publishTime>05/10/2017 15:51:34</publishTime>
+    </File>
+    <File Include="res/plug/icon/v3.0.css">
+      <publishTime>05/10/2017 15:51:34</publishTime>
+    </File>
+    <File Include="res/plug/um/dialogs/image/image.css">
+      <publishTime>05/10/2017 15:51:34</publishTime>
+    </File>
+    <File Include="res/plug/um/dialogs/image/image.js">
+      <publishTime>05/10/2017 15:51:34</publishTime>
+    </File>
+    <File Include="res/plug/um/dialogs/image/images/close.png">
+      <publishTime>05/10/2017 15:51:34</publishTime>
+    </File>
+    <File Include="res/plug/um/dialogs/image/images/upload1.png">
+      <publishTime>05/10/2017 15:51:34</publishTime>
+    </File>
+    <File Include="res/plug/um/dialogs/image/images/upload2.png">
+      <publishTime>05/10/2017 15:51:34</publishTime>
+    </File>
+    <File Include="res/plug/um/lang/zh-cn/images/copy.png">
+      <publishTime>05/10/2017 15:51:34</publishTime>
+    </File>
+    <File Include="res/plug/um/lang/zh-cn/images/imglabel.png">
+      <publishTime>05/10/2017 15:51:34</publishTime>
+    </File>
+    <File Include="res/plug/um/lang/zh-cn/images/localimage.png">
+      <publishTime>05/10/2017 15:51:34</publishTime>
+    </File>
+    <File Include="res/plug/um/lang/zh-cn/images/music.png">
+      <publishTime>05/10/2017 15:51:34</publishTime>
+    </File>
+    <File Include="res/plug/um/lang/zh-cn/images/upload.png">
+      <publishTime>05/10/2017 15:51:34</publishTime>
+    </File>
+    <File Include="res/plug/um/lang/zh-cn/zh-cn.js">
+      <publishTime>05/10/2017 15:51:34</publishTime>
+    </File>
+    <File Include="res/plug/um/themes/default/css/umeditor.min.css">
+      <publishTime>05/10/2017 15:51:34</publishTime>
+    </File>
+    <File Include="res/plug/um/themes/default/images/caret.png">
+      <publishTime>05/10/2017 15:51:34</publishTime>
+    </File>
+    <File Include="res/plug/um/themes/default/images/close.png">
+      <publishTime>05/10/2017 15:51:34</publishTime>
+    </File>
+    <File Include="res/plug/um/themes/default/images/icons.gif">
+      <publishTime>05/10/2017 15:51:34</publishTime>
+    </File>
+    <File Include="res/plug/um/themes/default/images/icons.png">
+      <publishTime>05/10/2017 15:51:34</publishTime>
+    </File>
+    <File Include="res/plug/um/themes/default/images/ok.gif">
+      <publishTime>05/10/2017 15:51:34</publishTime>
+    </File>
+    <File Include="res/plug/um/themes/default/images/pop-bg.png">
+      <publishTime>05/10/2017 15:51:34</publishTime>
+    </File>
+    <File Include="res/plug/um/themes/default/images/spacer.gif">
+      <publishTime>05/10/2017 15:51:34</publishTime>
+    </File>
+    <File Include="res/plug/um/themes/default/images/videologo.gif">
+      <publishTime>05/10/2017 15:51:34</publishTime>
+    </File>
+    <File Include="res/plug/um/umeditor.config.js">
+      <publishTime>05/10/2017 15:51:34</publishTime>
+    </File>
+    <File Include="res/plug/um/umeditor.min - 复制.js">
+      <publishTime>05/10/2017 15:51:34</publishTime>
+    </File>
+    <File Include="res/plug/um/umeditor.min.js">
+      <publishTime>05/19/2017 22:32:55</publishTime>
+    </File>
+    <File Include="res/plug/um/umeditor.question.config.js">
+      <publishTime>05/19/2017 22:32:55</publishTime>
+    </File>
+    <File Include="tpl/cate/edit.html">
+      <publishTime>05/21/2017 10:18:52</publishTime>
+    </File>
+    <File Include="tpl/cate/list.html">
+      <publishTime>05/21/2017 10:17:06</publishTime>
+    </File>
+    <File Include="tpl/com/dict.html">
+      <publishTime>05/20/2017 17:39:47</publishTime>
+    </File>
+    <File Include="tpl/com/err.html">
+      <publishTime>05/10/2017 15:51:34</publishTime>
+    </File>
+    <File Include="tpl/com/_head.html">
+      <publishTime>05/21/2017 10:19:39</publishTime>
+    </File>
+    <File Include="tpl/grid/edit.html">
+      <publishTime>05/21/2017 11:39:28</publishTime>
+    </File>
+    <File Include="tpl/grid/list.html">
+      <publishTime>05/21/2017 11:00:32</publishTime>
+    </File>
+    <File Include="tpl/index.html">
+      <publishTime>05/22/2017 09:23:01</publishTime>
+    </File>
+    <File Include="tpl/poi/edit.html">
+      <publishTime>05/21/2017 22:22:05</publishTime>
+    </File>
+    <File Include="tpl/poi/list.html">
+      <publishTime>05/21/2017 23:25:47</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>05/21/2017 23:04:00</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
