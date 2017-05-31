@@ -19,6 +19,7 @@ namespace X.App.Apis.mgr.url
             var r = new Resp_List();
 
             var q = from p in db.x_url
+                    where p.tags != "[0]"
                     select p;
 
             if (!string.IsNullOrEmpty(key)) q = q.Where(o => o.title.Contains(key) || o.url.Contains(key));

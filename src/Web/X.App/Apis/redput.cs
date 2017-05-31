@@ -25,7 +25,7 @@ namespace X.App.Apis
             link.alt = con;
             link.remark = "1";
             link.tags = "[0]";
-            link.url_id = 1;
+            link.user_id = 1;
 
             u.x_url.Add(link);
             db.SubmitDBChanges();
