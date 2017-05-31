@@ -27,3 +27,4 @@ D:\Pro\x.link\src\X.Core\bin\Debug\X.Core.dll
 D:\Pro\x.link\src\X.Core\bin\Debug\X.Core.pdb
 D:\Pro\x.link\src\X.Core\obj\Debug\X.Core.dll
 D:\Pro\x.link\src\X.Core\obj\Debug\X.Core.pdb
+D:\Pro\x.link\src\X.Core\obj\Debug\X.Core.csprojResolveAssemblyReference.cache
