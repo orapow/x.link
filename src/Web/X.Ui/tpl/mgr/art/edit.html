@@ -3,6 +3,9 @@
 <head>
     #parse("com/_head.html")
     <title>文章编辑 - $cfg.name</title>
+    <link href="/res/plug/um/themes/default/css/umeditor.min.css" rel="stylesheet" />
+    <script src="/res/plug/um/umeditor.config.js"></script>
+    <script src="/res/plug/um/umeditor.min.js"></script>
     <style type="text/css">
         body {
             margin: 0;
@@ -22,7 +25,8 @@
     <x:form api="mgr.art.save">
         <input type="hidden" name="id" value="$!item.id" x-check="" />
         <x:text title="标题" name="title" size="5" def="$!item.title" />
-        <x:text title="内容" name="content" size="200" def="$!item.content" />
+        <!--<x:text title="内容" name="content" size="200" def="$!item.content" />-->
+        <x:text tp="3" title="内容" name="content" size="5" def="$!item.content" />
         <div class="btns">
             <button type="submit" class="btn btn-primary"><i class="icon-ok"></i>提交保存</button>
         </div>
