@@ -95,3 +95,17 @@ D:\Pro\x.link\src\Web\X.Ui\bin\X.Web.pdb
 D:\Pro\x.link\src\Web\X.Ui\obj\Debug\X.Ui.csprojResolveAssemblyReference.cache
 D:\Pro\x.link\src\Web\X.Ui\obj\Debug\X.Ui.dll
 D:\Pro\x.link\src\Web\X.Ui\obj\Debug\X.Ui.pdb
+E:\源码文件\linkPro\src\Web\X.Ui\bin\X.Ui.dll.config
+E:\源码文件\linkPro\src\Web\X.Ui\bin\X.Ui.dll
+E:\源码文件\linkPro\src\Web\X.Ui\bin\X.Ui.pdb
+E:\源码文件\linkPro\src\Web\X.Ui\bin\X.App.dll
+E:\源码文件\linkPro\src\Web\X.Ui\bin\X.Json.dll
+E:\源码文件\linkPro\src\Web\X.Ui\bin\X.Web.dll
+E:\源码文件\linkPro\src\Web\X.Ui\bin\X.Core.dll
+E:\源码文件\linkPro\src\Web\X.Ui\bin\NVelocity.dll
+E:\源码文件\linkPro\src\Web\X.Ui\bin\log4net.dll
+E:\源码文件\linkPro\src\Web\X.Ui\bin\X.App.pdb
+E:\源码文件\linkPro\src\Web\X.Ui\bin\X.Web.pdb
+E:\源码文件\linkPro\src\Web\X.Ui\obj\Debug\X.Ui.csprojResolveAssemblyReference.cache
+E:\源码文件\linkPro\src\Web\X.Ui\obj\Debug\X.Ui.dll
+E:\源码文件\linkPro\src\Web\X.Ui\obj\Debug\X.Ui.pdb
