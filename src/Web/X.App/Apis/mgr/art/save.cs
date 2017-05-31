@@ -12,7 +12,7 @@ namespace X.App.Apis.mgr.art
     {
         public int id { get; set; }
         [ParmsAttr(req = true, name = "标题")]
-        public string title { get; set; }
+        public string topic { get; set; }
         public string content { get; set; }
 
         protected override XResp Execute()
@@ -22,7 +22,7 @@ namespace X.App.Apis.mgr.art
             if (id > 0) ent = db.x_art.FirstOrDefault(o => o.id == id);
             if (ent == null) ent = new x_art() { add_time = DateTime.Now };
 
-            ent.title = title;
+            ent.title = topic;
             ent.content = content;
             ent.add_time = DateTime.Now;
             ent.update_time = DateTime.Now;

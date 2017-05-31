@@ -15,7 +15,7 @@
             <button type="submit" class="btn btn-primary"><i class="icon-search"></i>搜索</button>
             <button type="reset" class="btn"><i class="icon-remove"></i>清除</button>
             <div class="btns">
-                <a class="btn btn-primary" id="btn_add" onclick="show_edit()"><i class="icon-plus"></i>添加文章</a>
+                <a class="btn btn-primary" id="btn_add" href="edit.html"><i class="icon-plus"></i>添加文章</a>
             </div>
         </x:form>
     </div>
@@ -38,7 +38,7 @@
                 { t: "排序", f: "{sort_id}", w: 80, align: "center" },
             ],
             btns: [
-                { txt: "编辑", ico: "edit", act: "edit", confirm: false },
+                { txt: "编辑", ico: "edit", link: "edit-{id}.html", confirm: false },
                 { txt: "删除", ico: "remove", act: "del" },
             ]
         };
@@ -65,7 +65,7 @@
         function show_edit(id, up) {
             x.openwin("edit-" + (id || "") + ".html", "编辑文章", function () {
                 g.getlist();
-            }, { w: 400, h: 300 });
+            }, { w: 800, h: 400 });
         }
     </script>
 </body>

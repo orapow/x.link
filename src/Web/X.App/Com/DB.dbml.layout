@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DB">
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.75" name="DB">
   <DataContextMoniker Name="/DBDataContext" />
   <nestedChildShapes>
     <classShape Id="1d321241-a5af-4889-8a4a-cbecd54d2224" absoluteBounds="0.875, 4, 2, 3.7548343912760416">
@@ -27,5 +27,11 @@
         <classShapeMoniker Id="f4d98078-66ac-4d20-84fe-6d25975609c0" />
       </nodes>
     </associationConnector>
+    <classShape Id="718603f6-5724-4a42-9971-370c79817d48" absoluteBounds="4.625, 4.375, 2, 4.1244226074218746">
+      <DataClassMoniker Name="/DBDataContext/x_art" />
+      <nestedChildShapes>
+        <elementListCompartment Id="dc53f9f1-9fd9-4b24-b9e8-081a9f902218" absoluteBounds="4.64, 4.835, 1.9700000000000002, 3.564422607421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
   </nestedChildShapes>
 </ordesignerObjectsDiagram>

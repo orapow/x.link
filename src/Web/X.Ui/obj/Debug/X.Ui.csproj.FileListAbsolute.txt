@@ -95,5 +95,3 @@ D:\Pro\x.link\src\Web\X.Ui\bin\X.Web.pdb
 D:\Pro\x.link\src\Web\X.Ui\obj\Debug\X.Ui.csprojResolveAssemblyReference.cache
 D:\Pro\x.link\src\Web\X.Ui\obj\Debug\X.Ui.dll
 D:\Pro\x.link\src\Web\X.Ui\obj\Debug\X.Ui.pdb
-D:\Pro\x.link\src\Web\X.Ui\bin\Enyim.Caching.dll
-D:\Pro\x.link\src\Web\X.Ui\bin\Enyim.Caching.pdb

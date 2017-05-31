@@ -51,6 +51,9 @@
   <ItemGroup>
     <Compile Include="Apis\load.cs" />
     <Compile Include="Apis\logout.cs" />
+    <Compile Include="Apis\mgr\art\del.cs" />
+    <Compile Include="Apis\mgr\art\list.cs" />
+    <Compile Include="Apis\mgr\art\save.cs" />
     <Compile Include="Apis\mgr\cate\bagsave.cs" />
     <Compile Include="Apis\mgr\login.cs" />
     <Compile Include="Apis\mgr\logout.cs" />
@@ -88,6 +91,8 @@
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
     <Compile Include="Views\com\err.cs" />
+    <Compile Include="Views\mgr\art\edit.cs" />
+    <Compile Include="Views\mgr\art\list.cs" />
     <Compile Include="Views\mgr\cate\bag.cs" />
     <Compile Include="Views\mgr\index.cs" />
     <Compile Include="Views\mgr\login.cs" />
