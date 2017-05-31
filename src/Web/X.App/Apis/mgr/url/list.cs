@@ -11,6 +11,7 @@ namespace X.App.Apis.mgr.url
         public int page { get; set; }
         public int limit { get; set; }
         public int cate { get; set; }
+        public string remark { get; set; }
         public string key { get; set; }
         public string lg { get; set; }
 
@@ -42,10 +43,28 @@ namespace X.App.Apis.mgr.url
                 o.title,
                 cate = db.GetDictName("link.cate." + lg, o.cate),
                 o.url,
+                remark=getState(o.remark),
                 o.icon
             });
 
             return r;
+        }
+
+        private string getState(string s) { 
+            string m = "error";
+            switch (s)
+            {
+                case "1": 
+                    m = "待审核";
+                    break;
+                case "2":
+                    m = "通过";
+                    break;
+                case "3":
+                    m = "未通过";
+                    break;
+            }
+            return m;
         }
 
     }
