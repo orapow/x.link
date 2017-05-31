@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    #parse("com/_head.html")
+    <title>文章管理 - $cfg.name</title>
+    <link href="/css/x.grid.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="title">
+        <span class="main">文章管理</span> <!--- <span class="sub">字典配置</span>-->
+    </div>
+    <div class="search">
+        <x:form>
+            <x:text name="key" tip="搜索名称" size="4" />
+            <button type="submit" class="btn btn-primary"><i class="icon-search"></i>搜索</button>
+            <button type="reset" class="btn"><i class="icon-remove"></i>清除</button>
+            <div class="btns">
+                <a class="btn btn-primary" id="btn_add" onclick="show_edit()"><i class="icon-plus"></i>添加文章</a>
+            </div>
+        </x:form>
+    </div>
+    <div class="gridpanel">
+    </div>
+    <script type="text/javascript">
+        $("form:eq(0)").xform({
+            callback: function (d) {
+                d.page = 1;
+                g.getlist(d);
+            }
+        })
+
+        var cfg = {
+            el: ".gridpanel",
+            searchcon: { page: 1, limit: 30 },
+            api: "mgr.art.list",
+            fs: [
+                { t: "标题", f: "{title}", w: 220 },
+                { t: "排序", f: "{sort_id}", w: 80, align: "center" },
+            ],
+            btns: [
+                { txt: "编辑", ico: "edit", act: "edit", confirm: false },
+                { txt: "删除", ico: "remove", act: "del" },
+            ]
+        };
+
+        cfg.cellclick = function (act, d) {
+            switch (act) {
+                case "del":
+                    dodel(d.id);
+                    break;
+                case "edit":
+                    show_edit(d.value);
+                    break;
+            }
+        };
+
+        var g = x.grid.init(cfg);
+
+        function dodel(id) {
+            x.doapi("mgr.art.del", { id: id, }, function () {
+                g.getlist();
+            });
+        }
+
+        function show_edit(id, up) {
+            x.openwin("edit-" + (id || "") + "-" + (up || "") + "-$!{lg}.html", "编辑文章", function () {
+                g.getlist();
+            }, { w: 400, h: 300 });
+        }
+    </script>
+</body>
+</html>
