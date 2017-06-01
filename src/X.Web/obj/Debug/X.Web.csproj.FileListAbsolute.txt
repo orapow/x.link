@@ -80,3 +80,5 @@ D:\Pro\x.link\src\X.Web\bin\Debug\X.Core.pdb
 D:\Pro\x.link\src\X.Web\obj\Debug\X.Web.csprojResolveAssemblyReference.cache
 D:\Pro\x.link\src\X.Web\obj\Debug\X.Web.dll
 D:\Pro\x.link\src\X.Web\obj\Debug\X.Web.pdb
+E:\源码文件\linkPro\src\X.Web\obj\Debug\X.Web.csprojResolveAssemblyReference.cache
+E:\源码文件\linkPro\src\X.Web\obj\Debug\X.Web.dll

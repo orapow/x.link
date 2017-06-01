@@ -16,6 +16,7 @@
         <x:text title="标题" name="name" size="5" def="$!item.title" />
         <x:text title="链接" name="url" size="5" def="$!item.url" />
         <x:pick title="推荐" src="loc:是|否" name="top" mode="2" count="1" def="$!item.top" />
+        <x:pick title="状态" src="loc:待审核|通过|不通过" name="top" mode="2" count="1" def="$!item.remark" />
         <x:pick title="标签" src="dict:link.tag" name="tags" count="5" def="$!item.tags" />
         <x:upload name="icon" title="图标" count="1" tp="img" def="$!item.icon" />
         <div class="btns">

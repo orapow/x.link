@@ -134,6 +134,7 @@
     <Content Include="tpl\com\dict.html" />
     <Content Include="tpl\com\err.html" />
     <Content Include="tpl\com\_head.html" />
+    <Content Include="tpl\content.html" />
     <Content Include="tpl\login.html" />
     <Content Include="tpl\mgr\art\edit.html" />
     <Content Include="tpl\mgr\art\list.html" />

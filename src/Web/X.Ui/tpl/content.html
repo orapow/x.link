@@ -1,0 +1,197 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>abcok网址导航</title>
+    <script src="/js/jq_2.1.4.js"></script>
+    <script src="/js/x.js"></script>
+    <meta name="keywords" content="abcok网址导航" />
+    <meta name="description" content="abcok网址导航" />
+    <link href="/css/web/index.css" rel="stylesheet" type="text/css" />
+    <link href="/css/x.dialog.css" rel="stylesheet" />
+    <style type="text/css">
+        .slideTxtBox .bd {
+            display: none;
+        }
+
+        .links {
+            width: 1000px;
+            margin: 0 auto;
+            border-left: 1px solid #9bc1e7;
+            border-right: 1px solid #9bc1e7;
+            border-top: 1px solid #9bc1e7;
+        }
+
+            .links .c {
+                display: none;
+                border-bottom: 1px solid #9bc1e7;
+            }
+
+                .links .c .ct {
+                    display: inline-block;
+                    margin: 5px;
+                    cursor: pointer;
+                    padding: 5px;
+                }
+
+                    .links .c .ct.on {
+                        background-color: #245b93;
+                        color: white;
+                        font-weight: bold;
+                    }
+
+            .links .bd {
+                padding-top: 15px;
+                padding-left: 15px;
+                display: none;
+                border-bottom: 1px solid #9bc1e7;
+            }
+
+                .links .bd a {
+                    display: inline-block;
+                    margin-right: 15px;
+                    margin-bottom: 15px;
+                    padding-left: 25px;
+                }
+
+        .quick {
+            border: 1px solid #9bc1e7;
+            width: 1000px;
+            margin: -1px auto;
+        }
+
+            .quick .c {
+                display: inline-block;
+                margin: 10px 40px;
+                vertical-align: middle;
+            }
+
+                .quick .c input {
+                    line-height: 30px;
+                    border: 2px solid #245b93;
+                    text-indent: 10px;
+                    width: 220px;
+                }
+
+            .quick .btn {
+                background: #245b93;
+                color: white;
+                display: block;
+                height: 32px;
+                line-height: 32px;
+                width: 80px;
+                text-align: center;
+                cursor: pointer;
+            }
+
+        .link .plus {
+            display: inline-block;
+            border: 1px solid #ccc;
+            margin-left: 5px;
+            width: 30px;
+            text-align: center;
+            line-height: normal;
+        }
+
+        .my .btn {
+            font-size: 12px;
+            display: none;
+        }
+
+        .my:hover .btn {
+            display: inline-block;
+        }
+
+        .L3 {
+            margin-left: 190px;
+            margin-top: -10px;
+        }
+
+        .redtxt {
+            width: 245px;
+            height: 30px;
+            padding-left: 5px;
+            border: 1px solid #245b93;
+        }
+
+        .aretxt {
+            width: 98%;
+            height: 75px;
+            padding: 5px;
+            border: 1px solid #245b93;
+        }
+
+        .btnred {
+            display: block;
+            height: 30px;
+            line-height: 30px;
+            width: 100px;
+            background-color: #245b93;
+            color: #fff;
+            text-align: center;
+            resize: none;
+        }
+        .top02 h1 {
+            height: 25px;
+            line-height: 25px;
+            margin-top: 30px;
+            font-size: 18px;
+            color: #333;
+        }
+        .top02 span {
+            height: 20px;
+            line-height: 20px;
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 20px;
+            display: block;
+        }
+        .art p {
+          line-height:25px;
+        }
+    </style>
+    <script type="text/javascript">
+        function search(obj, type) {
+            var w = $(obj).val();
+            if (w == "") { alert("输入搜索关键字！"); return; }
+            if (type == "baidu") {
+                window.open("https://www.baidu.com/s?wd=" + w + "", "blank");
+            } else {
+                window.open("https://www.bing.com/search?q=" + w + "", "blank");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="menu">
+        <div class="menu1">
+            <ul>
+                <li class="L1"> <a href="#" style="margin-top:8px;display:block;"><img src="/img/web/logo1.png" /></a> </li>
+                <li class="L2"><span><a href="#">设为首页</a></span></li>
+                <li class="L3">
+                    <a>
+                        <iframe allowtransparency="true" frameborder="0" width="410" height="75" scrolling="no" src="//tianqi.2345.com/plugin/widget/index.htm?s=1&z=1&t=1&v=0&d=2&bd=0&k=&f=004080&q=1&e=1&a=1&c=57687&w=410&h=75&align=center"></iframe>
+                    </a>
+                </li>
+                <li class="L4" id="menu"><span>#if($cu.user_id>0)$cu.uid <a href="javascript:do_logout();">退出 </a>#else<a href="/reg.html">注册 </a>/<a href="/login.html"> 登录</a>#end</span></li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="content">
+        <div class="top02" style="min-height:200px;">
+            <h1>$!item.title</h1>
+            <span>时间：$!item.add_time</span>
+            <div class="art">
+                $!item.content
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer_nav">
+            <a href="content-1.html">关于我们</a> | <a href="content-2.html">法律申明</a> | <a href="content-3.html">联系我们</a> | <a href="/mgr/login.html" target="_blank">后台管理</a>
+        </div>
+    </div>
+</body>
+</html>
+

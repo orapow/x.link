@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="x.link" Class="DBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=192.168.0.119;Initial Catalog=x.link;Persist Security Info=True;User ID=sa" SettingsObjectName="X.App.Properties.Settings" SettingsPropertyName="x_linkConnectionString" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=JOIN-PC;Initial Catalog=x.link;User ID=sa" SettingsObjectName="X.App.Properties.Settings" SettingsPropertyName="x_linkConnectionString1" Provider="System.Data.SqlClient" />
   <Table Name="dbo.x_dict" Member="x_dict">
     <Type Name="x_dict">
       <Column Name="dict_id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
